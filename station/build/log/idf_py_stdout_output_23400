@@ -1,0 +1,196 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (30) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Dec 16 2024 13:23:05[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (39) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=24768h (149352) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=00034790 vaddr=3fc91c00 size=02b08h ( 11016) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=000372a0 vaddr=40380000 size=08d78h ( 36216) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=a139ch (660380) map[0m
+[0;32mI (240) esp_image: segment 4: paddr=000e13c4 vaddr=40388d78 size=08cech ( 36076) load[0m
+[0;32mI (252) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (253) boot: Disabling RNG early entropy source...[0m
+[0;32mI (264) cpu_start: Unicore app[0m
+[0;32mI (273) cpu_start: Pro cpu start user code[0m
+[0;32mI (273) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (273) cpu_start: Application information:[0m
+[0;32mI (276) cpu_start: Project name:     wifi_station[0m
+[0;32mI (281) cpu_start: App version:      1[0m
+[0;32mI (286) cpu_start: Compile time:     Dec 16 2024 13:22:55[0m
+[0;32mI (292) cpu_start: ELF file SHA256:  262e280fa...[0m
+[0;32mI (297) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (303) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (307) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (312) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (317) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (324) heap_init: At 3FC98D50 len 000272B0 (156 KiB): RAM[0m
+[0;32mI (330) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (337) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (344) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (351) spi_flash: detected chip: generic[0m
+[0;32mI (355) spi_flash: flash io: dio[0m
+[0;32mI (359) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (366) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (373) main_task: Started on CPU0[0m
+[0;32mI (373) main_task: Calling app_main()[0m
+[0;32mI (383) GPIO Touch Sensor: ESP_WIFI_MODE_STA[0m
+[0;32mI (383) pp: pp rom version: 9387209[0m
+[0;32mI (383) net80211: net80211 rom version: 9387209[0m
+I (403) wifi:wifi driver task: 3fca18dc, prio:23, stack:6656, core=0
+I (403) wifi:wifi firmware version: 3e0076f
+I (403) wifi:wifi certification version: v7.0
+I (403) wifi:config NVS flash: enabled
+I (413) wifi:config nano formating: disabled
+I (413) wifi:Init data frame dynamic rx buffer num: 32
+I (413) wifi:Init static rx mgmt buffer num: 5
+I (423) wifi:Init management short buffer num: 32
+I (423) wifi:Init dynamic tx buffer num: 32
+I (433) wifi:Init static tx FG buffer num: 2
+I (433) wifi:Init static rx buffer size: 1600
+I (433) wifi:Init static rx buffer num: 10
+I (443) wifi:Init dynamic rx buffer num: 32
+[0;32mI (443) wifi_init: rx ba win: 6[0m
+[0;32mI (453) wifi_init: tcpip mbox: 32[0m
+[0;32mI (453) wifi_init: udp mbox: 6[0m
+[0;32mI (453) wifi_init: tcp mbox: 6[0m
+[0;32mI (463) wifi_init: tcp tx win: 5760[0m
+[0;32mI (463) wifi_init: tcp rx win: 5760[0m
+[0;32mI (473) wifi_init: tcp mss: 1440[0m
+[0;32mI (473) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (473) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (483) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+I (533) wifi:mode : sta (34:85:18:02:2d:24)
+I (533) wifi:enable tsf
+[0;32mI (533) GPIO Touch Sensor: wifi_init_sta finished.[0m
+I (543) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (543) wifi:state: init -> auth (b0)
+I (553) wifi:state: auth -> assoc (0)
+I (553) wifi:state: assoc -> run (10)
+I (1163) wifi:connected with Turtlee, aid = 1, channel 6, BW20, bssid = 62:07:ee:e1:37:79
+I (1163) wifi:security: WPA2-PSK, phy: bgn, rssi: -29
+I (1163) wifi:pm start, type: 1
+
+I (1173) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1173) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (1183) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (2193) esp_netif_handlers: sta ip: 172.20.10.5, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (2193) GPIO Touch Sensor: got ip:172.20.10.5[0m
+[0;32mI (2193) GPIO Touch Sensor: connected to ap SSID:Turtlee password:11111111[0m
+[0;32mI (2203) mqtts_example: [APP] Free memory: 229856 bytes[0m
+[0;32mI (2203) mqtts_example: Other event id:7[0m
+[0;32mI (2213) GPIO Touch Sensor: Initializing touch sensors using GPIO[0m
+[0;32mI (2213) gpio: GPIO[0]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+I (2223) wifi:<ba-add>idx:0 (ifx:0, 62:07:ee:e1:37:79), tid:0, ssn:2, winSize:64
+[0;32mI (2233) gpio: GPIO[1]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2243) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2253) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2263) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2273) gpio: GPIO[9]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2283) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:3 [0m
+[0;32mI (2293) gpio: GPIO[5]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:3 [0m
+[0;32mI (2303) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:3 [0m
+[0;32mI (2303) gpio: GPIO[7]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:3 [0m
+[0;32mI (2313) gpio: GPIO[8]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (3133) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (3133) mqtts_example: sent subscribe successful, msg_id=6993[0m
+[0;32mI (3543) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=6993[0m
+[0;32mI (5303) GPIO Touch Sensor: Button on GPIO[7] Pressed[0m
+[0;32mI (5423) GPIO Touch Sensor: GPIO[7] Short Press Detected![0m
+[0;32mI (5423) GPIO Touch Sensor: GPIO[7] -> Output[0]: ON[0m
+[0;32mI (5423) mqtts_example: Message published successfully: {"device":7,"value":1}[0m
+LEDs for Sensor 0 updated: ON
+[0;32mI (6763) GPIO Touch Sensor: Button on GPIO[4] Pressed[0m
+[0;32mI (6843) GPIO Touch Sensor: GPIO[4] Short Press Detected![0m
+[0;32mI (6843) GPIO Touch Sensor: GPIO[4] -> Output[9]: ON[0m
+[0;32mI (6843) mqtts_example: Message published successfully: {"device":4,"value":1}[0m
+LEDs for Sensor 3 updated: ON
+[0;32mI (7413) GPIO Touch Sensor: Button on GPIO[5] Pressed[0m
+[0;32mI (7523) GPIO Touch Sensor: GPIO[5] Short Press Detected![0m
+[0;32mI (7523) GPIO Touch Sensor: GPIO[5] -> Output[5]: ON[0m
+[0;32mI (7523) mqtts_example: Message published successfully: {"device":5,"value":1}[0m
+LEDs for Sensor 2 updated: ON
+[0;32mI (8313) GPIO Touch Sensor: Button on GPIO[6] Pressed[0m
+[0;32mI (8413) GPIO Touch Sensor: GPIO[6] Short Press Detected![0m
+[0;32mI (8413) GPIO Touch Sensor: GPIO[6] -> Output[1]: ON[0m
+[0;32mI (8423) mqtts_example: Message published successfully: {"device":6,"value":1}[0m
+LEDs for Sensor 1 updated: ON
+[0;32mI (31703) GPIO Touch Sensor: Button on GPIO[7] Pressed[0m
+[0;32mI (31813) GPIO Touch Sensor: GPIO[7] Short Press Detected![0m
+[0;32mI (31813) GPIO Touch Sensor: GPIO[7] -> Output[0]: OFF[0m
+[0;32mI (31813) mqtts_example: Message published successfully: {"device":7,"value":0}[0m
+LEDs for Sensor 0 updated: OFF
+[0;32mI (77523) GPIO Touch Sensor: Button on GPIO[7] Pressed[0m
+[0;32mI (77623) GPIO Touch Sensor: GPIO[7] Short Press Detected![0m
+[0;32mI (77623) GPIO Touch Sensor: GPIO[7] -> Output[0]: ON[0m
+[0;32mI (77633) mqtts_example: Message published successfully: {"device":7,"value":1}[0m
+LEDs for Sensor 0 updated: ON
+[0;32mI (137403) GPIO Touch Sensor: Button on GPIO[5] Pressed[0m
+[0;32mI (137473) GPIO Touch Sensor: GPIO[5] Short Press Detected![0m
+[0;32mI (137473) GPIO Touch Sensor: GPIO[5] -> Output[5]: OFF[0m
+[0;32mI (137473) mqtts_example: Message published successfully: {"device":5,"value":0}[0m
+LEDs for Sensor 2 updated: OFF
+[0;32mI (146383) GPIO Touch Sensor: Button on GPIO[5] Pressed[0m
+[0;32mI (146493) GPIO Touch Sensor: GPIO[5] Short Press Detected![0m
+[0;32mI (146493) GPIO Touch Sensor: GPIO[5] -> Output[5]: ON[0m
+[0;32mI (146493) mqtts_example: Message published successfully: {"device":5,"value":1}[0m
+LEDs for Sensor 2 updated: ON
+[0;32mI (148953) GPIO Touch Sensor: Button on GPIO[5] Pressed[0m
+[0;32mI (149023) GPIO Touch Sensor: GPIO[5] Short Press Detected![0m
+[0;32mI (149023) GPIO Touch Sensor: GPIO[5] -> Output[5]: OFF[0m
+[0;32mI (149033) mqtts_example: Message published successfully: {"device":5,"value":0}[0m
+LEDs for Sensor 2 updated: OFF
+[0;32mI (191333) GPIO Touch Sensor: Button on GPIO[5] Pressed[0m
+[0;32mI (191433) GPIO Touch Sensor: GPIO[5] Short Press Detected![0m
+[0;32mI (191433) GPIO Touch Sensor: GPIO[5] -> Output[5]: ON[0m
+[0;32mI (191433) mqtts_example: Message published successfully: {"device":5,"value":1}[0m
+LEDs for Sensor 2 updated: ON
+[0;32mI (192563) GPIO Touch Sensor: Button on GPIO[5] Pressed[0m
+[0;32mI (192723) GPIO Touch Sensor: GPIO[5] Short Press Detected![0m
+[0;32mI (192723) GPIO Touch Sensor: GPIO[5] -> Output[5]: OFF[0m
+[0;32mI (192723) mqtts_example: Message published successfully: {"device":5,"value":0}[0m
+LEDs for Sensor 2 updated: OFF
+[0;32mI (194233) GPIO Touch Sensor: Button on GPIO[4] Pressed[0m
+[0;32mI (194383) GPIO Touch Sensor: GPIO[4] Short Press Detected![0m
+[0;32mI (194383) GPIO Touch Sensor: GPIO[4] -> Output[9]: OFF[0m
+[0;32mI (194383) mqtts_example: Message published successfully: {"device":4,"value":0}[0m
+LEDs for Sensor 3 updated: OFF
+[0;32mI (195633) GPIO Touch Sensor: Button on GPIO[4] Pressed[0m
+[0;32mI (195853) GPIO Touch Sensor: GPIO[4] Short Press Detected![0m
+[0;32mI (195853) GPIO Touch Sensor: GPIO[4] -> Output[9]: ON[0m
+[0;32mI (195853) mqtts_example: Message published successfully: {"device":4,"value":1}[0m
+LEDs for Sensor 3 updated: ON
+[0;32mI (812223) GPIO Touch Sensor: Button on GPIO[7] Pressed[0m
+[0;32mI (812303) GPIO Touch Sensor: GPIO[7] Short Press Detected![0m
+[0;32mI (812303) GPIO Touch Sensor: GPIO[7] -> Output[0]: OFF[0m
+[0;32mI (812313) mqtts_example: Message published successfully: {"device":7,"value":0}[0m
+LEDs for Sensor 0 updated: OFF
+[0;32mI (813943) GPIO Touch Sensor: Button on GPIO[6] Pressed[0m
+[0;32mI (814073) GPIO Touch Sensor: GPIO[6] Short Press Detected![0m
+[0;32mI (814073) GPIO Touch Sensor: GPIO[6] -> Output[1]: OFF[0m
+[0;32mI (814073) mqtts_example: Message published successfully: {"device":6,"value":0}[0m
+LEDs for Sensor 1 updated: OFF
+[0;32mI (839323) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/0
+DATA={"method":"setValue","params":true}
+[0;31mE (839323) GPIO Touch Sensor: GPIO not found in message.[0m
+[0;32mI (883593) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/1
+DATA={"method":"setValue","params":false}
+[0;31mE (883593) GPIO Touch Sensor: GPIO not found in message.[0m

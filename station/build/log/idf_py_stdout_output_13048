@@ -1,0 +1,410 @@
+�ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (30) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Dec 16 2024 13:23:05[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (39) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=24668h (149096) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=00034690 vaddr=3fc91c00 size=02b08h ( 11016) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=000371a0 vaddr=40380000 size=08e78h ( 36472) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=a119ch (659868) map[0m
+[0;32mI (240) esp_image: segment 4: paddr=000e11c4 vaddr=40388e78 size=08bech ( 35820) load[0m
+[0;32mI (252) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (252) boot: Disabling RNG early entropy source...[0m
+[0;32mI (264) cpu_start: Unicore app[0m
+[0;32mI (273) cpu_start: Pro cpu start user code[0m
+[0;32mI (273) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (273) cpu_start: Application information:[0m
+[0;32mI (276) cpu_start: Project name:     wifi_station[0m
+[0;32mI (281) cpu_start: App version:      1[0m
+[0;32mI (286) cpu_start: Compile time:     Dec 16 2024 13:22:55[0m
+[0;32mI (292) cpu_start: ELF file SHA256:  88d546929...[0m
+[0;32mI (297) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (302) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (307) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (312) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (317) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (324) heap_init: At 3FC98D50 len 000272B0 (156 KiB): RAM[0m
+[0;32mI (330) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (337) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (344) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (351) spi_flash: detected chip: generic[0m
+[0;32mI (355) spi_flash: flash io: dio[0m
+[0;32mI (359) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (366) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (373) main_task: Started on CPU0[0m
+[0;32mI (373) main_task: Calling app_main()[0m
+[0;32mI (383) GPIO Touch Sensor: ESP_WIFI_MODE_STA[0m
+[0;32mI (383) pp: pp rom version: 9387209[0m
+[0;32mI (383) net80211: net80211 rom version: 9387209[0m
+I (403) wifi:wifi driver task: 3fca18dc, prio:23, stack:6656, core=0
+I (403) wifi:wifi firmware version: 3e0076f
+I (403) wifi:wifi certification version: v7.0
+I (403) wifi:config NVS flash: enabled
+I (413) wifi:config nano formating: disabled
+I (413) wifi:Init data frame dynamic rx buffer num: 32
+I (413) wifi:Init static rx mgmt buffer num: 5
+I (423) wifi:Init management short buffer num: 32
+I (423) wifi:Init dynamic tx buffer num: 32
+I (433) wifi:Init static tx FG buffer num: 2
+I (433) wifi:Init static rx buffer size: 1600
+I (433) wifi:Init static rx buffer num: 10
+I (443) wifi:Init dynamic rx buffer num: 32
+[0;32mI (443) wifi_init: rx ba win: 6[0m
+[0;32mI (453) wifi_init: tcpip mbox: 32[0m
+[0;32mI (453) wifi_init: udp mbox: 6[0m
+[0;32mI (453) wifi_init: tcp mbox: 6[0m
+[0;32mI (463) wifi_init: tcp tx win: 5760[0m
+[0;32mI (463) wifi_init: tcp rx win: 5760[0m
+[0;32mI (473) wifi_init: tcp mss: 1440[0m
+[0;32mI (473) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (473) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (483) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+I (573) wifi:mode : sta (34:85:18:02:2d:24)
+I (573) wifi:enable tsf
+[0;32mI (573) GPIO Touch Sensor: wifi_init_sta finished.[0m
+[0;32mI (2983) GPIO Touch Sensor: retry to connect to the AP[0m
+[0;32mI (2983) GPIO Touch Sensor: connect to the AP fail[0m
+[0;32mI (5393) GPIO Touch Sensor: retry to connect to the AP[0m
+[0;32mI (5393) GPIO Touch Sensor: connect to the AP fail[0m
+[0;32mI (7803) GPIO Touch Sensor: retry to connect to the AP[0m
+[0;32mI (7803) GPIO Touch Sensor: connect to the AP fail[0m
+[0;32mI (10213) GPIO Touch Sensor: retry to connect to the AP[0m
+[0;32mI (10213) GPIO Touch Sensor: connect to the AP fail[0m
+[0;32mI (12623) GPIO Touch Sensor: retry to connect to the AP[0m
+[0;32mI (12623) GPIO Touch Sensor: connect to the AP fail[0m
+[0;32mI (15033) GPIO Touch Sensor: connect to the AP fail[0m
+[0;32mI (15033) GPIO Touch Sensor: Failed to connect to SSID:Turtlee, password:11111111[0m
+[0;32mI (15033) GPIO Touch Sensor: Initializing touch sensors using GPIO[0m
+[0;32mI (15043) gpio: GPIO[0]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (15053) gpio: GPIO[1]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (15063) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (15073) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (15073) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (15083) gpio: GPIO[9]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (15093) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:3 [0m
+[0;32mI (15103) gpio: GPIO[5]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:3 [0m
+[0;32mI (15113) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:3 [0m
+[0;32mI (15123) gpio: GPIO[7]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:3 [0m
+[0;32mI (15133) gpio: GPIO[8]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (18653) GPIO Touch Sensor: Touch Button on GPIO[4] Pressed[0m
+[0;32mI (18653) GPIO Touch Sensor: GPIO[4] -> Output[9]: ON[0m
+[0;31mE (18653) mqtt_client: Client was not initialized[0m
+[0;31mE (18663) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 3 updated: ON
+[0;32mI (21973) GPIO Touch Sensor: Touch Button on GPIO[4] Pressed[0m
+[0;32mI (21973) GPIO Touch Sensor: GPIO[4] -> Output[9]: OFF[0m
+[0;31mE (21973) mqtt_client: Client was not initialized[0m
+[0;31mE (21973) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 3 updated: OFF
+[0;32mI (23343) GPIO Touch Sensor: Touch Button on GPIO[4] Pressed[0m
+[0;32mI (23343) GPIO Touch Sensor: GPIO[4] -> Output[9]: ON[0m
+[0;31mE (23343) mqtt_client: Client was not initialized[0m
+[0;31mE (23343) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 3 updated: ON
+[0;32mI (23983) GPIO Touch Sensor: Touch Button on GPIO[4] Pressed[0m
+[0;32mI (23983) GPIO Touch Sensor: GPIO[4] -> Output[9]: OFF[0m
+[0;31mE (23983) mqtt_client: Client was not initialized[0m
+[0;31mE (23983) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 3 updated: OFF
+[0;32mI (24463) GPIO Touch Sensor: Touch Button on GPIO[4] Pressed[0m
+[0;32mI (24463) GPIO Touch Sensor: GPIO[4] -> Output[9]: ON[0m
+[0;31mE (24463) mqtt_client: Client was not initialized[0m
+[0;31mE (24473) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 3 updated: ON
+[0;32mI (24873) GPIO Touch Sensor: Touch Button on GPIO[4] Pressed[0m
+[0;32mI (24873) GPIO Touch Sensor: GPIO[4] -> Output[9]: OFF[0m
+[0;31mE (24873) mqtt_client: Client was not initialized[0m
+[0;31mE (24883) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 3 updated: OFF
+[0;32mI (25533) GPIO Touch Sensor: Touch Button on GPIO[5] Pressed[0m
+[0;32mI (25533) GPIO Touch Sensor: GPIO[5] -> Output[5]: ON[0m
+[0;31mE (25533) mqtt_client: Client was not initialized[0m
+[0;31mE (25533) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 2 updated: ON
+[0;32mI (26793) GPIO Touch Sensor: Touch Button on GPIO[5] Pressed[0m
+[0;32mI (26793) GPIO Touch Sensor: GPIO[5] -> Output[5]: OFF[0m
+[0;31mE (26793) mqtt_client: Client was not initialized[0m
+[0;31mE (26793) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 2 updated: OFF
+[0;32mI (27463) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (27463) GPIO Touch Sensor: GPIO[7] -> Output[0]: ON[0m
+[0;31mE (27463) mqtt_client: Client was not initialized[0m
+[0;31mE (27473) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 0 updated: ON
+[0;32mI (27923) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (27923) GPIO Touch Sensor: GPIO[7] -> Output[0]: OFF[0m
+[0;31mE (27933) mqtt_client: Client was not initialized[0m
+[0;31mE (27933) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 0 updated: OFF
+[0;32mI (28563) GPIO Touch Sensor: Touch Button on GPIO[6] Pressed[0m
+[0;32mI (28563) GPIO Touch Sensor: GPIO[6] -> Output[1]: ON[0m
+[0;31mE (28563) mqtt_client: Client was not initialized[0m
+[0;31mE (28573) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 1 updated: ON
+[0;32mI (28953) GPIO Touch Sensor: Touch Button on GPIO[6] Pressed[0m
+[0;32mI (28953) GPIO Touch Sensor: GPIO[6] -> Output[1]: OFF[0m
+[0;31mE (28953) mqtt_client: Client was not initialized[0m
+[0;31mE (28963) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 1 updated: OFF
+[0;32mI (30673) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (30673) GPIO Touch Sensor: GPIO[7] -> Output[0]: ON[0m
+[0;31mE (30673) mqtt_client: Client was not initialized[0m
+[0;31mE (30673) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 0 updated: ON
+[0;32mI (31163) GPIO Touch Sensor: Touch Button on GPIO[4] Pressed[0m
+[0;32mI (31163) GPIO Touch Sensor: GPIO[4] -> Output[9]: ON[0m
+[0;31mE (31163) mqtt_client: Client was not initialized[0m
+[0;31mE (31163) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 3 updated: ON
+[0;32mI (31673) GPIO Touch Sensor: Touch Button on GPIO[5] Pressed[0m
+[0;32mI (31673) GPIO Touch Sensor: GPIO[5] -> Output[5]: ON[0m
+[0;31mE (31673) mqtt_client: Client was not initialized[0m
+[0;31mE (31683) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 2 updated: ON
+[0;32mI (32133) GPIO Touch Sensor: Touch Button on GPIO[6] Pressed[0m
+[0;32mI (32133) GPIO Touch Sensor: GPIO[6] -> Output[1]: ON[0m
+[0;31mE (32133) mqtt_client: Client was not initialized[0m
+[0;31mE (32143) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 1 updated: ON
+[0;32mI (32613) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (32613) GPIO Touch Sensor: GPIO[7] -> Output[0]: OFF[0m
+[0;31mE (32613) mqtt_client: Client was not initialized[0m
+[0;31mE (32623) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 0 updated: OFF
+[0;32mI (33043) GPIO Touch Sensor: Touch Button on GPIO[6] Pressed[0m
+[0;32mI (33043) GPIO Touch Sensor: GPIO[6] -> Output[1]: OFF[0m
+[0;31mE (33053) mqtt_client: Client was not initialized[0m
+[0;31mE (33053) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 1 updated: OFF
+[0;32mI (33403) GPIO Touch Sensor: Touch Button on GPIO[5] Pressed[0m
+[0;32mI (33403) GPIO Touch Sensor: GPIO[5] -> Output[5]: OFF[0m
+[0;31mE (33413) mqtt_client: Client was not initialized[0m
+[0;31mE (33413) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 2 updated: OFF
+[0;32mI (33723) GPIO Touch Sensor: Touch Button on GPIO[4] Pressed[0m
+[0;32mI (33723) GPIO Touch Sensor: GPIO[4] -> Output[9]: OFF[0m
+[0;31mE (33723) mqtt_client: Client was not initialized[0m
+[0;31mE (33733) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 3 updated: OFF
+[0;32mI (34073) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (34073) GPIO Touch Sensor: GPIO[7] -> Output[0]: ON[0m
+[0;31mE (34073) mqtt_client: Client was not initialized[0m
+[0;31mE (34083) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 0 updated: ON
+[0;32mI (34273) GPIO Touch Sensor: Touch Button on GPIO[4] Pressed[0m
+[0;32mI (34273) GPIO Touch Sensor: GPIO[4] -> Output[9]: ON[0m
+[0;31mE (34273) mqtt_client: Client was not initialized[0m
+[0;31mE (34283) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 3 updated: ON
+[0;32mI (34623) GPIO Touch Sensor: Touch Button on GPIO[5] Pressed[0m
+[0;32mI (34623) GPIO Touch Sensor: GPIO[5] -> Output[5]: ON[0m
+[0;31mE (34623) mqtt_client: Client was not initialized[0m
+[0;31mE (34623) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 2 updated: ON
+[0;32mI (34933) GPIO Touch Sensor: Touch Button on GPIO[6] Pressed[0m
+[0;32mI (34933) GPIO Touch Sensor: GPIO[6] -> Output[1]: ON[0m
+[0;31mE (34933) mqtt_client: Client was not initialized[0m
+[0;31mE (34933) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 1 updated: ON
+[0;32mI (35163) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (35163) GPIO Touch Sensor: GPIO[7] -> Output[0]: OFF[0m
+[0;31mE (35163) mqtt_client: Client was not initialized[0m
+[0;31mE (35163) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 0 updated: OFF
+[0;32mI (35363) GPIO Touch Sensor: Touch Button on GPIO[4] Pressed[0m
+[0;32mI (35363) GPIO Touch Sensor: GPIO[4] -> Output[9]: OFF[0m
+[0;31mE (35363) mqtt_client: Client was not initialized[0m
+[0;31mE (35373) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 3 updated: OFF
+[0;32mI (35683) GPIO Touch Sensor: Touch Button on GPIO[5] Pressed[0m
+[0;32mI (35683) GPIO Touch Sensor: GPIO[5] -> Output[5]: OFF[0m
+[0;31mE (35683) mqtt_client: Client was not initialized[0m
+[0;31mE (35683) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 2 updated: OFF
+[0;32mI (35953) GPIO Touch Sensor: Touch Button on GPIO[6] Pressed[0m
+[0;32mI (35953) GPIO Touch Sensor: GPIO[6] -> Output[1]: OFF[0m
+[0;31mE (35953) mqtt_client: Client was not initialized[0m
+[0;31mE (35963) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 1 updated: OFF
+[0;32mI (36153) GPIO Touch Sensor: Touch Button on GPIO[4] Pressed[0m
+[0;32mI (36153) GPIO Touch Sensor: GPIO[4] -> Output[9]: ON[0m
+[0;31mE (36153) mqtt_client: Client was not initialized[0m
+[0;31mE (36153) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 3 updated: ON
+[0;32mI (36413) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (36413) GPIO Touch Sensor: GPIO[7] -> Output[0]: ON[0m
+[0;31mE (36413) mqtt_client: Client was not initialized[0m
+[0;31mE (36413) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 0 updated: ON
+[0;32mI (36603) GPIO Touch Sensor: Touch Button on GPIO[5] Pressed[0m
+[0;32mI (36603) GPIO Touch Sensor: GPIO[5] -> Output[5]: ON[0m
+[0;31mE (36613) mqtt_client: Client was not initialized[0m
+[0;31mE (36613) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 2 updated: ON
+[0;32mI (36793) GPIO Touch Sensor: Touch Button on GPIO[6] Pressed[0m
+[0;32mI (36793) GPIO Touch Sensor: GPIO[6] -> Output[1]: ON[0m
+[0;31mE (36803) mqtt_client: Client was not initialized[0m
+[0;31mE (36803) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 1 updated: ON
+[0;32mI (37003) GPIO Touch Sensor: Touch Button on GPIO[4] Pressed[0m
+[0;32mI (37003) GPIO Touch Sensor: GPIO[4] -> Output[9]: OFF[0m
+[0;31mE (37003) mqtt_client: Client was not initialized[0m
+[0;31mE (37003) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 3 updated: OFF
+[0;32mI (37193) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (37193) GPIO Touch Sensor: GPIO[7] -> Output[0]: OFF[0m
+[0;31mE (37193) mqtt_client: Client was not initialized[0m
+[0;31mE (37203) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 0 updated: OFF
+[0;32mI (37363) GPIO Touch Sensor: Touch Button on GPIO[5] Pressed[0m
+[0;32mI (37363) GPIO Touch Sensor: GPIO[5] -> Output[5]: OFF[0m
+[0;31mE (37373) mqtt_client: Client was not initialized[0m
+[0;31mE (37373) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 2 updated: OFF
+[0;32mI (37523) GPIO Touch Sensor: Touch Button on GPIO[6] Pressed[0m
+[0;32mI (37523) GPIO Touch Sensor: GPIO[6] -> Output[1]: OFF[0m
+[0;31mE (37523) mqtt_client: Client was not initialized[0m
+[0;31mE (37523) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 1 updated: OFF
+[0;32mI (37693) GPIO Touch Sensor: Touch Button on GPIO[4] Pressed[0m
+[0;32mI (37693) GPIO Touch Sensor: GPIO[4] -> Output[9]: ON[0m
+[0;31mE (37693) mqtt_client: Client was not initialized[0m
+[0;31mE (37703) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 3 updated: ON
+[0;32mI (37843) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (37843) GPIO Touch Sensor: GPIO[7] -> Output[0]: ON[0m
+[0;31mE (37843) mqtt_client: Client was not initialized[0m
+[0;31mE (37853) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 0 updated: ON
+[0;32mI (157743) GPIO Touch Sensor: Touch Button on GPIO[4] Pressed[0m
+[0;32mI (157743) GPIO Touch Sensor: GPIO[4] -> Output[9]: OFF[0m
+[0;31mE (157743) mqtt_client: Client was not initialized[0m
+[0;31mE (157743) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 3 updated: OFF
+[0;32mI (158483) GPIO Touch Sensor: Touch Button on GPIO[4] Pressed[0m
+[0;32mI (158483) GPIO Touch Sensor: GPIO[4] -> Output[9]: ON[0m
+[0;31mE (158483) mqtt_client: Client was not initialized[0m
+[0;31mE (158483) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 3 updated: ON
+[0;32mI (158993) GPIO Touch Sensor: Touch Button on GPIO[4] Pressed[0m
+[0;32mI (158993) GPIO Touch Sensor: GPIO[4] -> Output[9]: OFF[0m
+[0;31mE (159003) mqtt_client: Client was not initialized[0m
+[0;31mE (159003) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 3 updated: OFF
+[0;32mI (159453) GPIO Touch Sensor: Touch Button on GPIO[4] Pressed[0m
+[0;32mI (159453) GPIO Touch Sensor: GPIO[4] -> Output[9]: ON[0m
+[0;31mE (159453) mqtt_client: Client was not initialized[0m
+[0;31mE (159453) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 3 updated: ON
+[0;32mI (159903) GPIO Touch Sensor: Touch Button on GPIO[4] Pressed[0m
+[0;32mI (159903) GPIO Touch Sensor: GPIO[4] -> Output[9]: OFF[0m
+[0;31mE (159903) mqtt_client: Client was not initialized[0m
+[0;31mE (159913) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 3 updated: OFF
+[0;32mI (160503) GPIO Touch Sensor: Touch Button on GPIO[5] Pressed[0m
+[0;32mI (160503) GPIO Touch Sensor: GPIO[5] -> Output[5]: ON[0m
+[0;31mE (160503) mqtt_client: Client was not initialized[0m
+[0;31mE (160513) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 2 updated: ON
+[0;32mI (161243) GPIO Touch Sensor: Touch Button on GPIO[5] Pressed[0m
+[0;32mI (161243) GPIO Touch Sensor: GPIO[5] -> Output[5]: OFF[0m
+[0;31mE (161243) mqtt_client: Client was not initialized[0m
+[0;31mE (161253) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 2 updated: OFF
+[0;32mI (471633) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (471633) GPIO Touch Sensor: GPIO[7] -> Output[0]: OFF[0m
+[0;31mE (471633) mqtt_client: Client was not initialized[0m
+[0;31mE (471633) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 0 updated: OFF
+[0;32mI (472243) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (472243) GPIO Touch Sensor: GPIO[7] -> Output[0]: ON[0m
+[0;31mE (472253) mqtt_client: Client was not initialized[0m
+[0;31mE (472253) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 0 updated: ON
+[0;32mI (681913) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (681913) GPIO Touch Sensor: GPIO[7] -> Output[0]: OFF[0m
+[0;31mE (681913) mqtt_client: Client was not initialized[0m
+[0;31mE (681913) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 0 updated: OFF
+[0;32mI (1466163) GPIO Touch Sensor: Touch Button on GPIO[4] Pressed[0m
+[0;32mI (1466163) GPIO Touch Sensor: GPIO[4] -> Output[9]: ON[0m
+[0;31mE (1466163) mqtt_client: Client was not initialized[0m
+[0;31mE (1466173) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 3 updated: ON
+[0;32mI (1466683) GPIO Touch Sensor: Touch Button on GPIO[4] Pressed[0m
+[0;32mI (1466683) GPIO Touch Sensor: GPIO[4] -> Output[9]: OFF[0m
+[0;31mE (1466683) mqtt_client: Client was not initialized[0m
+[0;31mE (1466683) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 3 updated: OFF
+[0;32mI (1468043) GPIO Touch Sensor: Touch Button on GPIO[4] Pressed[0m
+[0;32mI (1468043) GPIO Touch Sensor: GPIO[4] -> Output[9]: ON[0m
+[0;31mE (1468043) mqtt_client: Client was not initialized[0m
+[0;31mE (1468043) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 3 updated: ON
+[0;32mI (1468733) GPIO Touch Sensor: Touch Button on GPIO[4] Pressed[0m
+[0;32mI (1468733) GPIO Touch Sensor: GPIO[4] -> Output[9]: OFF[0m
+[0;31mE (1468733) mqtt_client: Client was not initialized[0m
+[0;31mE (1468743) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 3 updated: OFF
+[0;32mI (1473463) GPIO Touch Sensor: Touch Button on GPIO[4] Pressed[0m
+[0;32mI (1473463) GPIO Touch Sensor: GPIO[4] -> Output[9]: ON[0m
+[0;31mE (1473463) mqtt_client: Client was not initialized[0m
+[0;31mE (1473463) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 3 updated: ON
+[0;32mI (1474083) GPIO Touch Sensor: Touch Button on GPIO[4] Pressed[0m
+[0;32mI (1474083) GPIO Touch Sensor: GPIO[4] -> Output[9]: OFF[0m
+[0;31mE (1474093) mqtt_client: Client was not initialized[0m
+[0;31mE (1474093) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 3 updated: OFF
+[0;32mI (2536653) GPIO Touch Sensor: Touch Button on GPIO[4] Pressed[0m
+[0;32mI (2536653) GPIO Touch Sensor: GPIO[4] -> Output[9]: ON[0m
+[0;31mE (2536653) mqtt_client: Client was not initialized[0m
+[0;31mE (2536663) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 3 updated: ON
+[0;32mI (2537253) GPIO Touch Sensor: Touch Button on GPIO[4] Pressed[0m
+[0;32mI (2537253) GPIO Touch Sensor: GPIO[4] -> Output[9]: OFF[0m
+[0;31mE (2537253) mqtt_client: Client was not initialized[0m
+[0;31mE (2537253) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 3 updated: OFF
+[0;32mI (2540403) GPIO Touch Sensor: Touch Button on GPIO[5] Pressed[0m
+[0;32mI (2540403) GPIO Touch Sensor: GPIO[5] -> Output[5]: ON[0m
+[0;31mE (2540403) mqtt_client: Client was not initialized[0m
+[0;31mE (2540413) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 2 updated: ON
+[0;32mI (2541093) GPIO Touch Sensor: Touch Button on GPIO[5] Pressed[0m
+[0;32mI (2541093) GPIO Touch Sensor: GPIO[5] -> Output[5]: OFF[0m
+[0;31mE (2541103) mqtt_client: Client was not initialized[0m
+[0;31mE (2541103) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 2 updated: OFF
+[0;32mI (2542943) GPIO Touch Sensor: Touch Button on GPIO[4] Pressed[0m
+[0;32mI (2542943) GPIO Touch Sensor: GPIO[4] -> Output[9]: ON[0m
+[0;31mE (2542943) mqtt_client: Client was not initialized[0m
+[0;31mE (2542953) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 3 updated: ON
+[0;32mI (2544243) GPIO Touch Sensor: Touch Button on GPIO[4] Pressed[0m
+[0;32mI (2544243) GPIO Touch Sensor: GPIO[4] -> Output[9]: OFF[0m
+[0;31mE (2544253) mqtt_client: Client was not initialized[0m
+[0;31mE (2544253) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 3 updated: OFF
+[0;32mI (2600473) GPIO Touch Sensor: Touch Button on GPIO[5] Pressed[0m
+[0;32mI (2600473) GPIO Touch Sensor: GPIO[5] -> Output[5]: ON[0m
+[0;31mE (2600473) mqtt_client: Client was not initialized[0m
+[0;31mE (2600473) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 2 updated: ON

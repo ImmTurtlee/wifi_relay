@@ -1,0 +1,46 @@
+Traceback (most recent call last):
+  File "C:\Espressif\python_env\idf5.2_py3.11_env\Lib\site-packages\esptool\loader.py", line 730, in connect
+    self.check_chip_id()
+  File "C:\Espressif\python_env\idf5.2_py3.11_env\Lib\site-packages\esptool\loader.py", line 1495, in check_chip_id
+    chip_id = self.get_chip_id()
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Espressif\python_env\idf5.2_py3.11_env\Lib\site-packages\esptool\loader.py", line 131, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Espressif\python_env\idf5.2_py3.11_env\Lib\site-packages\esptool\loader.py", line 953, in get_chip_id
+    res = self.check_command(
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Espressif\python_env\idf5.2_py3.11_env\Lib\site-packages\esptool\loader.py", line 467, in check_command
+    val, data = self.command(op, data, chk, timeout=timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Espressif\python_env\idf5.2_py3.11_env\Lib\site-packages\esptool\loader.py", line 450, in command
+    raise UnsupportedCommandError(self, op)
+esptool.util.UnsupportedCommandError: This command (0x14) is not supported in Secure Download Mode
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Espressif\python_env\idf5.2_py3.11_env\Lib\site-packages\esptool\__main__.py", line 9, in <module>
+    esptool._main()
+  File "C:\Espressif\python_env\idf5.2_py3.11_env\Lib\site-packages\esptool\__init__.py", line 1139, in _main
+    main()
+  File "C:\Espressif\python_env\idf5.2_py3.11_env\Lib\site-packages\esptool\__init__.py", line 712, in main
+    esp = esp or get_default_connected_device(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Espressif\python_env\idf5.2_py3.11_env\Lib\site-packages\esptool\__init__.py", line 1024, in get_default_connected_device
+    _esp.connect(before, connect_attempts)
+  File "C:\Espressif\python_env\idf5.2_py3.11_env\Lib\site-packages\esptool\loader.py", line 734, in connect
+    self._connect_attempt(mode, reset_sequence[0])
+  File "C:\Espressif\python_env\idf5.2_py3.11_env\Lib\site-packages\esptool\loader.py", line 563, in _connect_attempt
+    reset_strategy()  # Reset the chip to bootloader (download mode)
+    ^^^^^^^^^^^^^^^^
+TypeError: 'str' object is not callable
+CMake Error at run_serial_tool.cmake:66 (message):
+  
+  C:/Espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.2.2/components/esptool_py/esptool/esptool.py;--chip;esp32c3
+  failed.
+
+
+

@@ -1,0 +1,241 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xf (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (30) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Nov 13 2024 10:56:13[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (39) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=24620h (149024) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=00034648 vaddr=3fc91c00 size=02ae0h ( 10976) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=00037130 vaddr=40380000 size=08ee8h ( 36584) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=a0e74h (659060) map[0m
+[0;32mI (240) esp_image: segment 4: paddr=000e0e9c vaddr=40388ee8 size=08b7ch ( 35708) load[0m
+[0;32mI (252) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (252) boot: Disabling RNG early entropy source...[0m
+[0;32mI (264) cpu_start: Unicore app[0m
+[0;32mI (272) cpu_start: Pro cpu start user code[0m
+[0;32mI (273) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (273) cpu_start: Application information:[0m
+[0;32mI (276) cpu_start: Project name:     wifi_station[0m
+[0;32mI (281) cpu_start: App version:      1[0m
+[0;32mI (285) cpu_start: Compile time:     Nov 13 2024 10:56:06[0m
+[0;32mI (291) cpu_start: ELF file SHA256:  63f58116e...[0m
+[0;32mI (297) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (302) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (307) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (312) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (317) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (324) heap_init: At 3FC98D20 len 000272E0 (156 KiB): RAM[0m
+[0;32mI (330) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (337) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (344) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (351) spi_flash: detected chip: generic[0m
+[0;32mI (355) spi_flash: flash io: dio[0m
+[0;33mW (359) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (372) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (379) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (386) main_task: Started on CPU0[0m
+[0;32mI (386) main_task: Calling app_main()[0m
+[0;32mI (396) GPIO Touch Sensor: ESP_WIFI_MODE_STA[0m
+[0;32mI (396) pp: pp rom version: 9387209[0m
+[0;32mI (396) net80211: net80211 rom version: 9387209[0m
+I (416) wifi:wifi driver task: 3fca188c, prio:23, stack:6656, core=0
+I (416) wifi:wifi firmware version: 3e0076f
+I (416) wifi:wifi certification version: v7.0
+I (416) wifi:config NVS flash: enabled
+I (426) wifi:config nano formating: disabled
+I (426) wifi:Init data frame dynamic rx buffer num: 32
+I (426) wifi:Init static rx mgmt buffer num: 5
+I (436) wifi:Init management short buffer num: 32
+I (436) wifi:Init dynamic tx buffer num: 32
+I (446) wifi:Init static tx FG buffer num: 2
+I (446) wifi:Init static rx buffer size: 1600
+I (446) wifi:Init static rx buffer num: 10
+I (456) wifi:Init dynamic rx buffer num: 32
+[0;32mI (456) wifi_init: rx ba win: 6[0m
+[0;32mI (466) wifi_init: tcpip mbox: 32[0m
+[0;32mI (466) wifi_init: udp mbox: 6[0m
+[0;32mI (466) wifi_init: tcp mbox: 6[0m
+[0;32mI (476) wifi_init: tcp tx win: 5760[0m
+[0;32mI (476) wifi_init: tcp rx win: 5760[0m
+[0;32mI (486) wifi_init: tcp mss: 1440[0m
+[0;32mI (486) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (486) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (496) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+I (546) wifi:mode : sta (24:ec:4a:e5:81:08)
+I (546) wifi:enable tsf
+[0;32mI (546) GPIO Touch Sensor: wifi_init_sta finished.[0m
+I (556) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (556) wifi:state: init -> auth (b0)
+I (556) wifi:state: auth -> assoc (0)
+I (566) wifi:state: assoc -> run (10)
+I (596) wifi:connected with Turtlee, aid = 3, channel 6, BW20, bssid = ea:02:7e:43:cd:e0
+I (596) wifi:security: WPA2-PSK, phy: bgn, rssi: -42
+I (596) wifi:pm start, type: 1
+
+I (606) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (606) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (616) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+[0;32mI (2126) esp_netif_handlers: sta ip: 172.20.10.6, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (2126) GPIO Touch Sensor: got ip:172.20.10.6[0m
+[0;32mI (2126) GPIO Touch Sensor: connected to ap SSID:Turtlee password:11111111[0m
+[0;32mI (2136) mqtts_example: [APP] Free memory: 229564 bytes[0m
+[0;32mI (2136) mqtts_example: Other event id:7[0m
+[0;32mI (2146) GPIO Touch Sensor: Initializing touch sensors using GPIO[0m
+[0;32mI (2146) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:3 [0m
+[0;32mI (2156) gpio: GPIO[7]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:3 [0m
+[0;32mI (2166) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:3 [0m
+[0;32mI (2176) gpio: GPIO[19]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:3 [0m
+[0;32mI (2186) gpio: GPIO[8]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+I (2756) wifi:<ba-add>idx:0 (ifx:0, ea:02:7e:43:cd:e0), tid:0, ssn:3, winSize:64
+[0;31mE (12156) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (12156) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (12156) mqtt_client: Error transport connect[0m
+[0;32mI (12156) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (12166) mqtts_example: Last error reported from esp-tls: 0x8006[0m
+[0;32mI (12166) mqtts_example: Last errno string (Success)[0m
+[0;32mI (12176) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (27176) mqtts_example: Other event id:7[0m
+[0;31mE (37186) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (37186) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (37186) mqtt_client: Error transport connect[0m
+[0;32mI (37186) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (37196) mqtts_example: Last error reported from esp-tls: 0x8006[0m
+[0;32mI (37196) mqtts_example: Last errno string (Success)[0m
+[0;32mI (37206) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (52206) mqtts_example: Other event id:7[0m
+[0;31mE (62216) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (62216) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (62216) mqtt_client: Error transport connect[0m
+[0;32mI (62216) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (62226) mqtts_example: Last error reported from esp-tls: 0x8006[0m
+[0;32mI (62226) mqtts_example: Last errno string (Success)[0m
+[0;32mI (62236) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (77236) mqtts_example: Other event id:7[0m
+[0;31mE (87246) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (87246) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (87246) mqtt_client: Error transport connect[0m
+[0;32mI (87246) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (87256) mqtts_example: Last error reported from esp-tls: 0x8006[0m
+[0;32mI (87256) mqtts_example: Last errno string (Success)[0m
+[0;32mI (87266) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (102266) mqtts_example: Other event id:7[0m
+[0;31mE (112276) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (112276) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (112276) mqtt_client: Error transport connect[0m
+[0;32mI (112276) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (112286) mqtts_example: Last error reported from esp-tls: 0x8006[0m
+[0;32mI (112286) mqtts_example: Last errno string (Success)[0m
+[0;32mI (112296) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (127296) mqtts_example: Other event id:7[0m
+[0;31mE (137306) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (137306) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (137306) mqtt_client: Error transport connect[0m
+[0;32mI (137306) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (137316) mqtts_example: Last error reported from esp-tls: 0x8006[0m
+[0;32mI (137316) mqtts_example: Last errno string (Success)[0m
+[0;32mI (137326) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (152326) mqtts_example: Other event id:7[0m
+[0;31mE (162336) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (162336) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (162336) mqtt_client: Error transport connect[0m
+[0;32mI (162336) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (162346) mqtts_example: Last error reported from esp-tls: 0x8006[0m
+[0;32mI (162346) mqtts_example: Last errno string (Success)[0m
+[0;32mI (162356) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (177356) mqtts_example: Other event id:7[0m
+[0;31mE (187366) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (187366) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (187366) mqtt_client: Error transport connect[0m
+[0;32mI (187366) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (187376) mqtts_example: Last error reported from esp-tls: 0x8006[0m
+[0;32mI (187376) mqtts_example: Last errno string (Success)[0m
+[0;32mI (187386) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (202386) mqtts_example: Other event id:7[0m
+[0;31mE (212396) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (212396) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (212396) mqtt_client: Error transport connect[0m
+[0;32mI (212396) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (212406) mqtts_example: Last error reported from esp-tls: 0x8006[0m
+[0;32mI (212406) mqtts_example: Last errno string (Success)[0m
+[0;32mI (212416) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (227416) mqtts_example: Other event id:7[0m
+[0;31mE (237426) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (237426) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (237426) mqtt_client: Error transport connect[0m
+[0;32mI (237426) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (237436) mqtts_example: Last error reported from esp-tls: 0x8006[0m
+[0;32mI (237436) mqtts_example: Last errno string (Success)[0m
+[0;32mI (237446) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (252446) mqtts_example: Other event id:7[0m
+[0;31mE (262456) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (262456) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (262456) mqtt_client: Error transport connect[0m
+[0;32mI (262456) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (262466) mqtts_example: Last error reported from esp-tls: 0x8006[0m
+[0;32mI (262466) mqtts_example: Last errno string (Success)[0m
+[0;32mI (262476) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (277476) mqtts_example: Other event id:7[0m
+[0;31mE (287486) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (287486) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (287486) mqtt_client: Error transport connect[0m
+[0;32mI (287486) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (287496) mqtts_example: Last error reported from esp-tls: 0x8006[0m
+[0;32mI (287496) mqtts_example: Last errno string (Success)[0m
+[0;32mI (287506) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (302506) mqtts_example: Other event id:7[0m
+[0;31mE (312516) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (312516) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (312516) mqtt_client: Error transport connect[0m
+[0;32mI (312516) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (312526) mqtts_example: Last error reported from esp-tls: 0x8006[0m
+[0;32mI (312526) mqtts_example: Last errno string (Success)[0m
+[0;32mI (312536) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (327536) mqtts_example: Other event id:7[0m
+[0;31mE (337546) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (337546) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (337546) mqtt_client: Error transport connect[0m
+[0;32mI (337546) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (337556) mqtts_example: Last error reported from esp-tls: 0x8006[0m
+[0;32mI (337556) mqtts_example: Last errno string (Success)[0m
+[0;32mI (337566) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (352566) mqtts_example: Other event id:7[0m
+[0;31mE (362576) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (362576) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (362576) mqtt_client: Error transport connect[0m
+[0;32mI (362576) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (362586) mqtts_example: Last error reported from esp-tls: 0x8006[0m
+[0;32mI (362586) mqtts_example: Last errno string (Success)[0m
+[0;32mI (362596) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (377596) mqtts_example: Other event id:7[0m
+[0;31mE (387606) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (387606) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (387606) mqtt_client: Error transport connect[0m
+[0;32mI (387606) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (387616) mqtts_example: Last error reported from esp-tls: 0x8006[0m
+[0;32mI (387616) mqtts_example: Last errno string (Success)[0m
+[0;32mI (387626) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (402626) mqtts_example: Other event id:7[0m
+[0;31mE (412636) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (412636) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (412636) mqtt_client: Error transport connect[0m
+[0;32mI (412636) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (412646) mqtts_example: Last error reported from esp-tls: 0x8006[0m
+[0;32mI (412646) mqtts_example: Last errno string (Success)[0m
+[0;32mI (412656) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (427656) mqtts_example: Other event id:7[0m

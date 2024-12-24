@@ -1,0 +1,877 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (30) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Dec 16 2024 13:23:05[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (39) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=24768h (149352) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=00034790 vaddr=3fc91c00 size=02b08h ( 11016) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=000372a0 vaddr=40380000 size=08d78h ( 36216) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=a139ch (660380) map[0m
+[0;32mI (240) esp_image: segment 4: paddr=000e13c4 vaddr=40388d78 size=08cech ( 36076) load[0m
+[0;32mI (252) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (253) boot: Disabling RNG early entropy source...[0m
+[0;32mI (264) cpu_start: Unicore app[0m
+[0;32mI (273) cpu_start: Pro cpu start user code[0m
+[0;32mI (273) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (273) cpu_start: Application information:[0m
+[0;32mI (276) cpu_start: Project name:     wifi_station[0m
+[0;32mI (281) cpu_start: App version:      1[0m
+[0;32mI (286) cpu_start: Compile time:     Dec 16 2024 13:22:55[0m
+[0;32mI (292) cpu_start: ELF file SHA256:  40c4a87b2...[0m
+[0;32mI (297) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (303) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (307) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (312) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (317) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (324) heap_init: At 3FC98D50 len 000272B0 (156 KiB): RAM[0m
+[0;32mI (330) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (337) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (344) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (351) spi_flash: detected chip: generic[0m
+[0;32mI (355) spi_flash: flash io: dio[0m
+[0;32mI (359) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (366) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (373) main_task: Started on CPU0[0m
+[0;32mI (373) main_task: Calling app_main()[0m
+[0;32mI (383) GPIO Touch Sensor: ESP_WIFI_MODE_STA[0m
+[0;32mI (383) pp: pp rom version: 9387209[0m
+[0;32mI (383) net80211: net80211 rom version: 9387209[0m
+I (403) wifi:wifi driver task: 3fca18dc, prio:23, stack:6656, core=0
+I (403) wifi:wifi firmware version: 3e0076f
+I (403) wifi:wifi certification version: v7.0
+I (403) wifi:config NVS flash: enabled
+I (413) wifi:config nano formating: disabled
+I (413) wifi:Init data frame dynamic rx buffer num: 32
+I (413) wifi:Init static rx mgmt buffer num: 5
+I (423) wifi:Init management short buffer num: 32
+I (423) wifi:Init dynamic tx buffer num: 32
+I (433) wifi:Init static tx FG buffer num: 2
+I (433) wifi:Init static rx buffer size: 1600
+I (433) wifi:Init static rx buffer num: 10
+I (443) wifi:Init dynamic rx buffer num: 32
+[0;32mI (443) wifi_init: rx ba win: 6[0m
+[0;32mI (453) wifi_init: tcpip mbox: 32[0m
+[0;32mI (453) wifi_init: udp mbox: 6[0m
+[0;32mI (453) wifi_init: tcp mbox: 6[0m
+[0;32mI (463) wifi_init: tcp tx win: 5760[0m
+[0;32mI (463) wifi_init: tcp rx win: 5760[0m
+[0;32mI (473) wifi_init: tcp mss: 1440[0m
+[0;32mI (473) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (473) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (483) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+I (553) wifi:mode : sta (34:85:18:02:2d:24)
+I (553) wifi:enable tsf
+[0;32mI (563) GPIO Touch Sensor: wifi_init_sta finished.[0m
+I (563) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (563) wifi:state: init -> auth (b0)
+I (573) wifi:state: auth -> assoc (0)
+I (573) wifi:state: assoc -> run (10)
+I (623) wifi:connected with Turtlee, aid = 1, channel 6, BW20, bssid = 0a:cb:51:a1:74:0e
+I (623) wifi:security: WPA2-PSK, phy: bgn, rssi: -44
+I (623) wifi:pm start, type: 1
+
+I (623) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (633) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (643) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (1653) esp_netif_handlers: sta ip: 172.20.10.5, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (1653) GPIO Touch Sensor: got ip:172.20.10.5[0m
+[0;32mI (1653) GPIO Touch Sensor: connected to ap SSID:Turtlee password:11111111[0m
+[0;32mI (1663) mqtts_example: [APP] Free memory: 229672 bytes[0m
+[0;32mI (1663) mqtts_example: Other event id:7[0m
+[0;32mI (1673) GPIO Touch Sensor: Initializing touch sensors using GPIO[0m
+I (1673) wifi:<ba-add>idx:0 (ifx:0, 0a:cb:51:a1:74:0e), tid:0, ssn:2, winSize:64
+[0;32mI (1683) gpio: GPIO[0]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1693) gpio: GPIO[1]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1703) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1713) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1723) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1733) gpio: GPIO[9]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1743) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:3 [0m
+[0;32mI (1753) gpio: GPIO[5]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:3 [0m
+[0;32mI (1763) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:3 [0m
+[0;32mI (1763) gpio: GPIO[7]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:3 [0m
+[0;32mI (1773) gpio: GPIO[8]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (8873) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (8873) mqtts_example: sent subscribe successful, msg_id=35288[0m
+[0;32mI (9253) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=35288[0m
+[0;32mI (15233) GPIO Touch Sensor: Button on GPIO[5] Pressed[0m
+[0;32mI (15433) GPIO Touch Sensor: GPIO[5] Short Press Detected![0m
+[0;32mI (15433) GPIO Touch Sensor: GPIO[5] -> Output[5]: ON[0m
+[0;32mI (15433) mqtts_example: Message published successfully: {"device":5,"value":1}[0m
+LEDs for Sensor 2 updated: ON
+[0;32mI (15983) GPIO Touch Sensor: Button on GPIO[6] Pressed[0m
+[0;32mI (16133) GPIO Touch Sensor: GPIO[6] Short Press Detected![0m
+[0;32mI (16133) GPIO Touch Sensor: GPIO[6] -> Output[1]: ON[0m
+[0;32mI (16143) mqtts_example: Message published successfully: {"device":6,"value":1}[0m
+LEDs for Sensor 1 updated: ON
+[0;32mI (16423) GPIO Touch Sensor: Button on GPIO[7] Pressed[0m
+[0;32mI (16693) GPIO Touch Sensor: GPIO[7] Short Press Detected![0m
+[0;32mI (16693) GPIO Touch Sensor: GPIO[7] -> Output[0]: ON[0m
+[0;32mI (16693) mqtts_example: Message published successfully: {"device":7,"value":1}[0m
+LEDs for Sensor 0 updated: ON
+[0;32mI (16983) GPIO Touch Sensor: Button on GPIO[4] Pressed[0m
+[0;32mI (17213) GPIO Touch Sensor: GPIO[4] Short Press Detected![0m
+[0;32mI (17213) GPIO Touch Sensor: GPIO[4] -> Output[9]: ON[0m
+[0;32mI (17213) mqtts_example: Message published successfully: {"device":4,"value":1}[0m
+LEDs for Sensor 3 updated: ON
+[0;32mI (17673) GPIO Touch Sensor: Button on GPIO[5] Pressed[0m
+[0;32mI (17753) GPIO Touch Sensor: GPIO[5] Short Press Detected![0m
+[0;32mI (17753) GPIO Touch Sensor: GPIO[5] -> Output[5]: OFF[0m
+[0;32mI (17763) mqtts_example: Message published successfully: {"device":5,"value":0}[0m
+LEDs for Sensor 2 updated: OFF
+[0;32mI (170003) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/0
+DATA={"method":"setState","params":10}
+[0;31mE (170003) GPIO Touch Sensor: GPIO not found in message.[0m
+[0;32mI (217413) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/1
+DATA={"method":"red","params":10}
+[0;31mE (217413) GPIO Touch Sensor: GPIO not found in message.[0m
+[0;32mI (521493) GPIO Touch Sensor: Button on GPIO[5] Pressed[0m
+[0;32mI (521633) GPIO Touch Sensor: GPIO[5] Short Press Detected![0m
+[0;32mI (521633) GPIO Touch Sensor: GPIO[5] -> Output[5]: ON[0m
+[0;32mI (521643) mqtts_example: Message published successfully: {"device":5,"value":1}[0m
+LEDs for Sensor 2 updated: ON
+[0;32mI (522513) GPIO Touch Sensor: Button on GPIO[5] Pressed[0m
+[0;32mI (522723) GPIO Touch Sensor: GPIO[5] Short Press Detected![0m
+[0;32mI (522723) GPIO Touch Sensor: GPIO[5] -> Output[5]: OFF[0m
+[0;32mI (522733) mqtts_example: Message published successfully: {"device":5,"value":0}[0m
+LEDs for Sensor 2 updated: OFF
+[0;32mI (524343) GPIO Touch Sensor: Button on GPIO[5] Pressed[0m
+[0;32mI (524543) GPIO Touch Sensor: GPIO[5] Short Press Detected![0m
+[0;32mI (524543) GPIO Touch Sensor: GPIO[5] -> Output[5]: ON[0m
+[0;32mI (524543) mqtts_example: Message published successfully: {"device":5,"value":1}[0m
+LEDs for Sensor 2 updated: ON
+[0;32mI (525123) GPIO Touch Sensor: Button on GPIO[5] Pressed[0m
+[0;32mI (525373) GPIO Touch Sensor: GPIO[5] Short Press Detected![0m
+[0;32mI (525373) GPIO Touch Sensor: GPIO[5] -> Output[5]: OFF[0m
+[0;32mI (525373) mqtts_example: Message published successfully: {"device":5,"value":0}[0m
+LEDs for Sensor 2 updated: OFF
+[0;32mI (954163) GPIO Touch Sensor: Button on GPIO[5] Pressed[0m
+[0;32mI (954323) GPIO Touch Sensor: GPIO[5] Short Press Detected![0m
+[0;32mI (954323) GPIO Touch Sensor: GPIO[5] -> Output[5]: ON[0m
+[0;32mI (954323) mqtts_example: Message published successfully: {"device":5,"value":1}[0m
+LEDs for Sensor 2 updated: ON
+[0;32mI (956083) GPIO Touch Sensor: Button on GPIO[5] Pressed[0m
+[0;32mI (956213) GPIO Touch Sensor: GPIO[5] Short Press Detected![0m
+[0;32mI (956213) GPIO Touch Sensor: GPIO[5] -> Output[5]: OFF[0m
+[0;32mI (956213) mqtts_example: Message published successfully: {"device":5,"value":0}[0m
+LEDs for Sensor 2 updated: OFF
+[0;32mI (957233) GPIO Touch Sensor: Button on GPIO[6] Pressed[0m
+[0;32mI (957373) GPIO Touch Sensor: GPIO[6] Short Press Detected![0m
+[0;32mI (957373) GPIO Touch Sensor: GPIO[6] -> Output[1]: OFF[0m
+[0;32mI (957383) mqtts_example: Message published successfully: {"device":6,"value":0}[0m
+LEDs for Sensor 1 updated: OFF
+[0;32mI (958223) GPIO Touch Sensor: Button on GPIO[6] Pressed[0m
+[0;32mI (958373) GPIO Touch Sensor: GPIO[6] Short Press Detected![0m
+[0;32mI (958373) GPIO Touch Sensor: GPIO[6] -> Output[1]: ON[0m
+[0;32mI (958373) mqtts_example: Message published successfully: {"device":6,"value":1}[0m
+LEDs for Sensor 1 updated: ON
+[0;32mI (1734853) GPIO Touch Sensor: Button on GPIO[5] Pressed[0m
+[0;32mI (1737583) GPIO Touch Sensor: GPIO[5] Long Press Detected![0m
+[0;32mI (1737583) GPIO Touch Sensor: GPIO[5] Long Press -> Special Mode Activated![0m
+[0;32mI (1737583) GPIO Touch Sensor: Special Mode Activated for Sensor[2], GPIO[5][0m
+[0;32mI (1744713) GPIO Touch Sensor: Button on GPIO[5] Pressed[0m
+[0;32mI (1746943) GPIO Touch Sensor: GPIO[5] Long Press Detected![0m
+[0;32mI (1746943) GPIO Touch Sensor: GPIO[5] Long Press -> Special Mode Activated![0m
+[0;32mI (1746943) GPIO Touch Sensor: Special Mode Activated for Sensor[2], GPIO[5][0m
+[0;32mI (1809553) GPIO Touch Sensor: Button on GPIO[4] Pressed[0m
+[0;32mI (1812003) GPIO Touch Sensor: GPIO[4] Long Press Detected![0m
+[0;32mI (1812003) GPIO Touch Sensor: GPIO[4] Long Press -> Special Mode Activated![0m
+[0;32mI (1812003) GPIO Touch Sensor: Special Mode Activated for Sensor[3], GPIO[4][0m
+I (2363173) wifi:sta rx csa, newchan=9, old=6
+I (2363893) wifi:sta rx csa, newchan=9, old=6
+I (2364083) wifi:switch to channel 9
+I (2364083) wifi:new:<9,0>, old:<6,0>, ap:<255,255>, sta:<9,0>, prof:1
+I (2385253) wifi:bcn_timeout,ap_probe_send_start
+I (2387753) wifi:ap_probe_send over, resett wifi status to disassoc
+I (2387753) wifi:state: run -> init (c800)
+I (2387753) wifi:pm stop, total sleep time: 2093654111 us / 2387130213 us
+
+I (2387763) wifi:<ba-del>idx:0, tid:0
+I (2387763) wifi:new:<9,0>, old:<9,0>, ap:<255,255>, sta:<9,0>, prof:1
+[0;32mI (2387773) GPIO Touch Sensor: retry to connect to the AP[0m
+[0;32mI (2387773) GPIO Touch Sensor: connect to the AP fail[0m
+[0;31mE (2387783) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (2387793) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;32mI (2387803) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2390183) GPIO Touch Sensor: retry to connect to the AP[0m
+[0;32mI (2390183) GPIO Touch Sensor: connect to the AP fail[0m
+[0;32mI (2392593) GPIO Touch Sensor: retry to connect to the AP[0m
+[0;32mI (2392593) GPIO Touch Sensor: connect to the AP fail[0m
+[0;32mI (2395003) GPIO Touch Sensor: retry to connect to the AP[0m
+[0;32mI (2395003) GPIO Touch Sensor: connect to the AP fail[0m
+[0;32mI (2397413) GPIO Touch Sensor: retry to connect to the AP[0m
+[0;32mI (2397413) GPIO Touch Sensor: connect to the AP fail[0m
+[0;32mI (2399813) GPIO Touch Sensor: connect to the AP fail[0m
+[0;32mI (2402803) mqtts_example: Other event id:7[0m
+[0;31mE (2409803) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2409803) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2409803) mqtt_client: Error transport connect[0m
+[0;32mI (2409813) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (2409813) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (2409823) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (2409833) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (2409833) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2424843) mqtts_example: Other event id:7[0m
+[0;31mE (2431843) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2431843) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2431843) mqtt_client: Error transport connect[0m
+[0;32mI (2431853) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (2431853) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (2431863) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (2431873) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (2431873) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2446883) mqtts_example: Other event id:7[0m
+[0;31mE (2453883) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2453883) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2453883) mqtt_client: Error transport connect[0m
+[0;32mI (2453893) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (2453893) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (2453903) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (2453913) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (2453913) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2468923) mqtts_example: Other event id:7[0m
+[0;31mE (2475923) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2475923) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2475923) mqtt_client: Error transport connect[0m
+[0;32mI (2475933) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (2475933) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (2475943) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (2475953) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (2475953) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2490963) mqtts_example: Other event id:7[0m
+[0;31mE (2497963) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2497963) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2497963) mqtt_client: Error transport connect[0m
+[0;32mI (2497973) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (2497973) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (2497983) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (2497993) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (2497993) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2513003) mqtts_example: Other event id:7[0m
+[0;31mE (2520003) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2520003) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2520003) mqtt_client: Error transport connect[0m
+[0;32mI (2520013) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (2520013) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (2520023) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (2520033) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (2520033) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2535043) mqtts_example: Other event id:7[0m
+[0;31mE (2542043) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2542043) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2542043) mqtt_client: Error transport connect[0m
+[0;32mI (2542053) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (2542053) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (2542063) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (2542073) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (2542073) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2557083) mqtts_example: Other event id:7[0m
+[0;31mE (2564083) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2564083) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2564083) mqtt_client: Error transport connect[0m
+[0;32mI (2564093) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (2564093) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (2564103) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (2564113) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (2564113) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2579123) mqtts_example: Other event id:7[0m
+[0;31mE (2586123) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2586123) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2586123) mqtt_client: Error transport connect[0m
+[0;32mI (2586133) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (2586133) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (2586143) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (2586153) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (2586153) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2601163) mqtts_example: Other event id:7[0m
+[0;31mE (2608163) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2608163) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2608163) mqtt_client: Error transport connect[0m
+[0;32mI (2608173) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (2608173) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (2608183) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (2608193) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (2608193) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2623203) mqtts_example: Other event id:7[0m
+[0;31mE (2630203) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2630203) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2630203) mqtt_client: Error transport connect[0m
+[0;32mI (2630213) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (2630213) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (2630223) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (2630233) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (2630233) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2645243) mqtts_example: Other event id:7[0m
+[0;31mE (2652243) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2652243) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2652243) mqtt_client: Error transport connect[0m
+[0;32mI (2652253) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (2652253) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (2652263) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (2652273) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (2652273) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2667283) mqtts_example: Other event id:7[0m
+[0;31mE (2674283) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2674283) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2674283) mqtt_client: Error transport connect[0m
+[0;32mI (2674293) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (2674293) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (2674303) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (2674313) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (2674313) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2689323) mqtts_example: Other event id:7[0m
+[0;31mE (2696323) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2696323) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2696323) mqtt_client: Error transport connect[0m
+[0;32mI (2696333) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (2696333) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (2696343) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (2696353) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (2696353) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2711363) mqtts_example: Other event id:7[0m
+[0;31mE (2718363) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2718363) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2718363) mqtt_client: Error transport connect[0m
+[0;32mI (2718373) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (2718373) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (2718383) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (2718393) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (2718393) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2733403) mqtts_example: Other event id:7[0m
+[0;31mE (2740403) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2740403) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2740403) mqtt_client: Error transport connect[0m
+[0;32mI (2740413) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (2740413) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (2740423) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (2740433) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (2740433) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2755443) mqtts_example: Other event id:7[0m
+[0;31mE (2762443) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2762443) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2762443) mqtt_client: Error transport connect[0m
+[0;32mI (2762453) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (2762453) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (2762463) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (2762473) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (2762473) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2777483) mqtts_example: Other event id:7[0m
+[0;31mE (2784483) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2784483) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2784483) mqtt_client: Error transport connect[0m
+[0;32mI (2784493) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (2784493) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (2784503) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (2784513) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (2784513) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2799523) mqtts_example: Other event id:7[0m
+[0;31mE (2806523) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2806523) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2806523) mqtt_client: Error transport connect[0m
+[0;32mI (2806533) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (2806533) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (2806543) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (2806553) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (2806553) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2821563) mqtts_example: Other event id:7[0m
+[0;31mE (2828563) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2828563) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2828563) mqtt_client: Error transport connect[0m
+[0;32mI (2828573) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (2828573) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (2828583) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (2828593) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (2828593) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2843603) mqtts_example: Other event id:7[0m
+[0;31mE (2850603) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2850603) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2850603) mqtt_client: Error transport connect[0m
+[0;32mI (2850613) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (2850613) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (2850623) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (2850633) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (2850633) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2865643) mqtts_example: Other event id:7[0m
+[0;31mE (2872643) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2872643) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2872643) mqtt_client: Error transport connect[0m
+[0;32mI (2872653) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (2872653) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (2872663) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (2872673) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (2872673) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2887683) mqtts_example: Other event id:7[0m
+[0;31mE (2894683) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2894683) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2894683) mqtt_client: Error transport connect[0m
+[0;32mI (2894693) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (2894693) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (2894703) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (2894713) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (2894713) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2909723) mqtts_example: Other event id:7[0m
+[0;31mE (2916723) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2916723) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2916723) mqtt_client: Error transport connect[0m
+[0;32mI (2916733) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (2916733) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (2916743) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (2916753) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (2916753) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2931763) mqtts_example: Other event id:7[0m
+[0;31mE (2938763) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2938763) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2938763) mqtt_client: Error transport connect[0m
+[0;32mI (2938773) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (2938773) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (2938783) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (2938793) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (2938793) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2953803) mqtts_example: Other event id:7[0m
+[0;31mE (2960803) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2960803) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2960803) mqtt_client: Error transport connect[0m
+[0;32mI (2960813) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (2960813) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (2960823) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (2960833) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (2960833) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2975843) mqtts_example: Other event id:7[0m
+[0;31mE (2982843) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2982843) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2982843) mqtt_client: Error transport connect[0m
+[0;32mI (2982853) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (2982853) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (2982863) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (2982873) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (2982873) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2997883) mqtts_example: Other event id:7[0m
+[0;31mE (3004883) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3004883) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3004883) mqtt_client: Error transport connect[0m
+[0;32mI (3004893) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (3004893) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (3004903) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (3004913) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (3004913) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3019923) mqtts_example: Other event id:7[0m
+[0;31mE (3026923) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3026923) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3026923) mqtt_client: Error transport connect[0m
+[0;32mI (3026933) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (3026933) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (3026943) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (3026953) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (3026953) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3041963) mqtts_example: Other event id:7[0m
+[0;31mE (3048963) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3048963) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3048963) mqtt_client: Error transport connect[0m
+[0;32mI (3048973) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (3048973) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (3048983) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (3048993) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (3048993) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3064003) mqtts_example: Other event id:7[0m
+[0;31mE (3071003) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3071003) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3071003) mqtt_client: Error transport connect[0m
+[0;32mI (3071013) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (3071013) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (3071023) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (3071033) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (3071033) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3086043) mqtts_example: Other event id:7[0m
+[0;31mE (3093043) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3093043) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3093043) mqtt_client: Error transport connect[0m
+[0;32mI (3093053) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (3093053) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (3093063) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (3093073) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (3093073) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3108083) mqtts_example: Other event id:7[0m
+[0;31mE (3115083) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3115083) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3115083) mqtt_client: Error transport connect[0m
+[0;32mI (3115093) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (3115093) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (3115103) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (3115113) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (3115113) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3130123) mqtts_example: Other event id:7[0m
+[0;31mE (3137123) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3137123) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3137123) mqtt_client: Error transport connect[0m
+[0;32mI (3137133) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (3137133) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (3137143) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (3137153) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (3137153) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3152163) mqtts_example: Other event id:7[0m
+[0;31mE (3159163) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3159163) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3159163) mqtt_client: Error transport connect[0m
+[0;32mI (3159173) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (3159173) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (3159183) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (3159193) mqto string (Connection already in progress)[0m
+[0;32mI (3159193) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3174203) mqtts_example: Other event id:7[0m
+[0;31mE (3181203) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3181203) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3181203) mqtt_client: Error transport connect[0m
+[0;32mI (3181213) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (3181213) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (3181223) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (3181233) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (3181233) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3196243) mqtts_example: Other event id:7[0m
+[0;31mE (3203243) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3203243) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3203243) mqtt_client: Error transport connect[0m
+[0;32mI (3203253) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (3203253) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (3203263) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (3203273) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (3203273) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3218283) mqtts_example: Other event id:7[0m
+[0;31mE (3225283) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3225283) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3225283) mqtt_[0;32mI (3240323) mqtts_example: Other event id:7[0m
+[0;31mE (3247323) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3247323) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3247323) mqtt_client: Error transport connect[0m
+[0;32mI (3247333) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (3247333) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (3247343) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (3247353) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (3247353) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (7582203) mqtts_example: Other event id:7[0m
+[0;31mE (7589203) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (7589203) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (7589203) mqtt_client: Error transport connect[0m
+[0;32mI (7589213) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (7589213) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (7589223) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (7589233) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (7589233) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (7604243) mqtts_example: Other event id:7[0m
+[0;31mE (7611243) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (7611243) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (7611243) mqtt_client: Error transport connect[0m
+[0;32mI (7611253) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (7611253) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (7611263) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (7611273) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (7611273) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (7626283) mqtts_example: Other event id:7[0m
+[0;31mE (7633283) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (7633283) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (7633283) mqtt_client: Error transport connect[0m
+[0;32mI (7633293) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (7633293) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (7633303) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (7633313) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (7633313) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (7648323) mqtts_example: Other event id:7[0m
+[0;31mE (7655323) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (7655323) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (7655323) mqtt_client: Error transport connect[0m
+[0;32mI (7655333) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (7655333) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (7655343) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (7655353) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (7655353) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (7670363) mqtts_example: Other event id:7[0m
+[0;31mE (7677363) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (7677363) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (7677363) mqtt_client: Error transport connect[0m
+[0;32mI (7677373) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (7677373) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (7677383) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (7677393) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (7677393) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (7692403) mqtts_example: Other event id:7[0m
+[0;31mE (7699403) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (7699403) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (7699403) mqtt_client: Error transport connect[0m
+[0;32mI (7699413) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (7699413) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (7699423) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (7699433) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (7699433) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (7714443) mqtts_example: Other event id:7[0m
+[0;31mE (7721443) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (7721443) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (7721443) mqtt_client: Error transport connect[0m
+[0;32mI (7721453) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (7721453) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (7721463) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (7721473) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (7721473) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (7736483) mqtts_example: Other event id:7[0m
+[0;31mE (7743483) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (7743483) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (7743483) mqtt_client: Error transport connect[0m
+[0;32mI (7743493) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (7743493) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (7743503) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (7743513) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (7743513) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (7758523) mqtts_example: Other event id:7[0m
+[0;31mE (7765523) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (7765523) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (7765523) mqtt_client: Error transport connect[0m
+[0;32mI (7765533) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (7765533) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (7765543) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (7765553) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (7765553) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (7780563) mqtts_example: Other event id:7[0m
+[0;31mE (7787563) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (7787563) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (7787563) mqtt_client: Error transport connect[0m
+[0;32mI (7787573) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (7787573) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (7787583) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (7787593) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (7787593) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (7802603) mqtts_example: Other event id:7[0m
+[0;31mE (7809603) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (7809603) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (7809603) mqtt_client: Error transport connect[0m
+[0;32mI (7809613) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (7809613) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (7809623) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (7809633) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (7809633) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (7824643) mqtts_example: Other event id:7[0m
+[0;31mE (7831643) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (7831643) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (7831643) mqtt_client: Error transport connect[0m
+[0;32mI (7831653) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (7831653) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (7831663) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (7831673) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (7831673) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (7846683) mqtts_example: Other event id:7[0m
+[0;31mE (7853683) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (7853683) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (7853683) mqtt_client: Error transport connect[0m
+[0;32mI (7853693) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (7853693) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (7853703) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (7853713) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (7853713) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (7868723) mqtts_example: Other event id:7[0m
+[0;31mE (7875723) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (7875723) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (7875723) mqtt_client: Error transport connect[0m
+[0;32mI (7875733) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (7875733) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (7875743) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (7875753) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (7875753) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (7890763) mqtts_example: Other event id:7[0m
+[0;31mE (7897763) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (7897763) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (7897763) mqtt_client: Error transport connect[0m
+[0;32mI (7897773) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (7897773) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (7897783) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (7897793) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (7897793) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (7912803) mqtts_example: Other event id:7[0m
+[0;31mE (7919803) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (7919803) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (7919803) mqtt_client: Error transport connect[0m
+[0;32mI (7919813) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (7919813) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (7919823) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (7919833) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (7919833) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (7934843) mqtts_example: Other event id:7[0m
+[0;31mE (7941843) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (7941843) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (7941843) mqtt_client: Error transport connect[0m
+[0;32mI (7941853) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (7941853) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (7941863) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (7941873) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (7941873) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (7956883) mqtts_example: Other event id:7[0m
+[0;31mE (7963883) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (7963883) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (7963883) mqtt_client: Error transport connect[0m
+[0;32mI (7963893) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (7963893) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (7963903) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (7963913) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (7963913) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (7978923) mqtts_example: Other event id:7[0m
+[0;31mE (7985923) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (7985923) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (7985923) mqtt_client: Error transport connect[0m
+[0;32mI (7985933) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (7985933) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (7985943) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (7985953) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (7985953) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (8000963) mqtts_example: Other event id:7[0m
+[0;31mE (8007963) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (8007963) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (8007963) mqtt_client: Error transport connect[0m
+[0;32mI (8007973) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (8007973) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (8007983) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (8007993) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (8007993) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (8023003) mqtts_example: Other event id:7[0m
+[0;31mE (8030003) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (8030003) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (8030003) mqtt_client: Error transport connect[0m
+[0;32mI (8030013) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (8030013) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (8030023) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (8030033) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (8030033) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (8045043) mqtts_example: Other event id:7[0m
+[0;31mE (8052043) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (8052043) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (8052043) mqtt_client: Error transport connect[0m
+[0;32mI (8052053) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (8052053) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (8052063) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (8052073) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (8052073) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (8067083) mqtts_example: Other event id:7[0m
+[0;31mE (8074083) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (8074083) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (8074083) mqtt_client: Error transport connect[0m
+[0;32mI (8074093) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (8074093) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (8074103) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (8074113) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (8074113) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (8089123) mqtts_example: Other event id:7[0m
+[0;31mE (8096123) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (8096123) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (8096123) mqtt_client: Error transport connect[0m
+[0;32mI (8096133) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (8096133) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (8096143) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (8096153) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (8096153) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (8111163) mqtts_example: Other event id:7[0m
+[0;31mE (8118163) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (8118163) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (8118163) mqtt_client: Error transport connect[0m
+[0;32mI (8118173) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (8118173) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (8118183) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (8118193) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (8118193) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (8133203) mqtts_example: Other event id:7[0m
+[0;31mE (8140203) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (8140203) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (8140203) mqtt_client: Error transport connect[0m
+[0;32mI (8140213) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (8140213) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (8140223) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (8140233) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (8140233) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (8155243) mqtts_example: Other event id:7[0m
+[0;31mE (8162243) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (8162243) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (8162243) mqtt_client: Error transport connect[0m
+[0;32mI (8162253) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (8162253) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (8162263) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (8162273) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (8162273) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (8177283) mqtts_example: Other event id:7[0m
+[0;31mE (8184283) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (8184283) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (8184283) mqtt_client: Error transport connect[0m
+[0;32mI (8184293) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (8184293) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (8184303) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (8184313) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (8184313) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (8199323) mqtts_example: Other event id:7[0m
+[0;31mE (8206323) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (8206323) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (8206323) mqtt_client: Error transport connect[0m
+[0;32mI (8206333) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (8206333) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (8206343) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (8206353) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (8206353) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (8221363) mqtts_example: Other event id:7[0m
+[0;31mE (8228363) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (8228363) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (8228363) mqtt_client: Error transport connect[0m
+[0;32mI (8228373) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (8228373) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (8228383) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (8228393) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (8228393) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (8243403) mqtts_example: Other event id:7[0m
+[0;31mE (8250403) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (8250403) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (8250403) mqtt_client: Error transport connect[0m
+[0;32mI (8250413) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (8250413) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (8250423) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (8250433) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (8250433) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (8265443) mqtts_example: Other event id:7[0m
+[0;31mE (8272443) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (8272443) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (8272443) mqtt_client: Error transport connect[0m
+[0;32mI (8272453) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (8272453) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (8272463) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (8272473) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (8272473) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (8287483) mqtts_example: Other event id:7[0m
+[0;31mE (8294483) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (8294483) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (8294483) mqtt_client: Error transport connect[0m
+[0;32mI (8294493) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (8294493) mqtts_example: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (8294503) mqtts_example: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (8294513) mqtts_example: Last errno string (Connection already in progress)[0m
+[0;32mI (8294513) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (8301023) GPIO Touch Sensor: Button on GPIO[5] Pressed[0m
+[0;32mI (8301293) GPIO Touch Sensor: GPIO[5] Short Press Detected![0m
+[0;32mI (8301293) GPIO Touch Sensor: GPIO[5] -> Output[5]: ON[0m
+[0;33mW (8301293) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;31mE (8301303) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 2 updated: ON
+[0;32mI (8303333) GPIO Touch Sensor: Button on GPIO[5] Pressed[0m
+[0;32mI (8303533) GPIO Touch Sensor: GPIO[5] Short Press Detected![0m
+[0;32mI (8303533) GPIO Touch Sensor: GPIO[5] -> Output[5]: OFF[0m
+[0;33mW (8303533) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;31mE (8303543) mqtts_example: Failed to publish message: ESP_FAIL[0m
+LEDs for Sensor 2 updated: OFF

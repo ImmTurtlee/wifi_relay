@@ -1,0 +1,352 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xf (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (30) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Nov 13 2024 10:56:13[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (39) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=24628h (149032) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=00034650 vaddr=3fc91c00 size=02ae8h ( 10984) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=00037140 vaddr=40380000 size=08ed8h ( 36568) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=a0eb8h (659128) map[0m
+[0;32mI (240) esp_image: segment 4: paddr=000e0ee0 vaddr=40388ed8 size=08b8ch ( 35724) load[0m
+[0;32mI (252) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (252) boot: Disabling RNG early entropy source...[0m
+[0;32mI (264) cpu_start: Unicore app[0m
+[0;32mI (272) cpu_start: Pro cpu start user code[0m
+[0;32mI (273) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (273) cpu_start: Application information:[0m
+[0;32mI (276) cpu_start: Project name:     wifi_station[0m
+[0;32mI (281) cpu_start: App version:      1[0m
+[0;32mI (285) cpu_start: Compile time:     Nov 13 2024 10:56:06[0m
+[0;32mI (291) cpu_start: ELF file SHA256:  e8ca6a60c...[0m
+[0;32mI (297) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (302) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (307) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (312) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (317) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (324) heap_init: At 3FC98D30 len 000272D0 (156 KiB): RAM[0m
+[0;32mI (330) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (337) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (344) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (351) spi_flash: detected chip: generic[0m
+[0;32mI (355) spi_flash: flash io: dio[0m
+[0;33mW (359) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (372) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (379) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (386) main_task: Started on CPU0[0m
+[0;32mI (386) main_task: Calling app_main()[0m
+[0;32mI (396) GPIO Touch Sensor: ESP_WIFI_MODE_STA[0m
+[0;32mI (396) pp: pp rom version: 9387209[0m
+[0;32mI (396) net80211: net80211 rom version: 9387209[0m
+I (416) wifi:wifi driver task: 3fca189c, prio:23, stack:6656, core=0
+I (416) wifi:wifi firmware version: 3e0076f
+I (416) wifi:wifi certification version: v7.0
+I (416) wifi:config NVS flash: enabled
+I (426) wifi:config nano formating: disabled
+I (426) wifi:Init data frame dynamic rx buffer num: 32
+I (426) wifi:Init static rx mgmt buffer num: 5
+I (436) wifi:Init management short buffer num: 32
+I (436) wifi:Init dynamic tx buffer num: 32
+I (446) wifi:Init static tx FG buffer num: 2
+I (446) wifi:Init static rx buffer size: 1600
+I (446) wifi:Init static rx buffer num: 10
+I (456) wifi:Init dynamic rx buffer num: 32
+[0;32mI (456) wifi_init: rx ba win: 6[0m
+[0;32mI (466) wifi_init: tcpip mbox: 32[0m
+[0;32mI (466) wifi_init: udp mbox: 6[0m
+[0;32mI (466) wifi_init: tcp mbox: 6[0m
+[0;32mI (476) wifi_init: tcp tx win: 5760[0m
+[0;32mI (476) wifi_init: tcp rx win: 5760[0m
+[0;32mI (486) wifi_init: tcp mss: 1440[0m
+[0;32mI (486) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (486) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (496) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+I (536) wifi:mode : sta (24:ec:4a:e5:81:08)
+I (536) wifi:enable tsf
+[0;32mI (546) GPIO Touch Sensor: wifi_init_sta finished.[0m
+I (546) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (546) wifi:state: init -> auth (b0)
+I (556) wifi:state: auth -> assoc (0)
+I (556) wifi:state: assoc -> run (10)
+I (606) wifi:connected with Turtlee, aid = 2, channel 6, BW20, bssid = e2:7a:a3:5a:87:94
+I (606) wifi:security: WPA2-PSK, phy: bgn, rssi: -52
+I (606) wifi:pm start, type: 1
+
+I (606) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (616) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (626) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+[0;32mI (1636) esp_netif_handlers: sta ip: 172.20.10.6, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (1686) GPIO Touch Sensor: got ip:172.20.10.6[0m
+[0;32mI (1686) GPIO Touch Sensor: connected to ap SSID:Turtlee password:11111111[0m
+[0;32mI (1686) mqtts_example: [APP] Free memory: 229732 bytes[0m
+[0;32mI (1696) mqtts_example: Other event id:7[0m
+[0;32mI (1696) GPIO Touch Sensor: Initializing touch sensors using GPIO[0m
+[0;32mI (1706) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:3 [0m
+[0;32mI (1716) gpio: GPIO[7]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:3 [0m
+[0;32mI (1716) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:3 [0m
+[0;32mI (1726) gpio: GPIO[19]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:3 [0m
+[0;32mI (1736) gpio: GPIO[8]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+I (2156) wifi:<ba-add>idx:0 (ifx:0, e2:7a:a3:5a:87:94), tid:0, ssn:3, winSize:64
+[0;32mI (2216) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (2216) mqtts_example: sent subscribe successful, msg_id=12697[0m
+[0;32mI (2226) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=12697[0m
+[0;32mI (6896) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (6896) GPIO Touch Sensor: GPIO[7] OFF[0m
+[0;32mI (6896) mqtts_example: Message published successfully: {"device":7,"value":0}[0m
+[0;32mI (7286) GPIO Touch Sensor: Touch Button on GPIO[19] Pressed[0m
+[0;32mI (7286) GPIO Touch Sensor: GPIO[19] OFF[0m
+[0;32mI (7296) mqtts_example: Message published successfully: {"device":19,"value":0}[0m
+[0;32mI (7336) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (7336) GPIO Touch Sensor: GPIO[7] ON[0m
+[0;32mI (7336) mqtts_example: Message published successfully: {"device":7,"value":1}[0m
+[0;32mI (8626) GPIO Touch Sensor: Touch Button on GPIO[18] Pressed[0m
+[0;32mI (8626) GPIO Touch Sensor: GPIO[18] OFF[0m
+[0;32mI (8626) mqtts_example: Message published successfully: {"device":18,"value":0}[0m
+[0;32mI (9106) GPIO Touch Sensor: Touch Button on GPIO[6] Pressed[0m
+[0;32mI (9106) GPIO Touch Sensor: GPIO[6] OFF[0m
+[0;32mI (9106) mqtts_example: Message published successfully: {"device":6,"value":0}[0m
+[0;32mI (11266) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (11266) GPIO Touch Sensor: GPIO[7] OFF[0m
+[0;32mI (11266) mqtts_example: Message published successfully: {"device":7,"value":0}[0m
+[0;32mI (13226) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (13226) GPIO Touch Sensor: GPIO[7] ON[0m
+[0;32mI (13226) mqtts_example: Message published successfully: {"device":7,"value":1}[0m
+[0;32mI (199946) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (199946) GPIO Touch Sensor: GPIO[7] OFF[0m
+[0;32mI (199946) mqtts_example: Message published successfully: {"device":7,"value":0}[0m
+[0;32mI (240666) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (240666) GPIO Touch Sensor: GPIO[7] ON[0m
+[0;32mI (240666) mqtts_example: Message published successfully: {"device":7,"value":1}[0m
+[0;32mI (313906) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (313916) GPIO Touch Sensor: GPIO[7] OFF[0m
+[0;32mI (313916) mqtts_example: Message published successfully: {"device":7,"value":0}[0m
+[0;32mI (451946) GPIO Touch Sensor: Touch Button on GPIO[18] Pressed[0m
+[0;32mI (451946) GPIO Touch Sensor: GPIO[18] ON[0m
+[0;32mI (451956) mqtts_example: Message published successfully: {"device":18,"value":1}[0m
+[0;32mI (452066) GPIO Touch Sensor: Touch Button on GPIO[18] Pressed[0m
+[0;32mI (452066) GPIO Touch Sensor: GPIO[18] OFF[0m
+[0;32mI (452076) mqtts_example: Message published successfully: {"device":18,"value":0}[0m
+[0;32mI (452326) GPIO Touch Sensor: Touch Button on GPIO[6] Pressed[0m
+[0;32mI (452326) GPIO Touch Sensor: GPIO[6] ON[0m
+[0;32mI (452326) mqtts_example: Message published successfully: {"device":6,"value":1}[0m
+[0;32mI (453046) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (453046) GPIO Touch Sensor: GPIO[7] ON[0m
+[0;32mI (453046) mqtts_example: Message published successfully: {"device":7,"value":1}[0m
+[0;32mI (477856) GPIO Touch Sensor: Touch Button on GPIO[6] Pressed[0m
+[0;32mI (477856) GPIO Touch Sensor: GPIO[6] OFF[0m
+[0;32mI (477856) mqtts_example: Message published successfully: {"device":6,"value":0}[0m
+[0;32mI (478776) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (478776) GPIO Touch Sensor: GPIO[7] OFF[0m
+[0;32mI (478776) mqtts_example: Message published successfully: {"device":7,"value":0}[0m
+[0;32mI (481626) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (481626) GPIO Touch Sensor: GPIO[7] ON[0m
+[0;32mI (481636) mqtts_example: Message published successfully: {"device":7,"value":1}[0m
+[0;32mI (592786) GPIO Touch Sensor: Touch Button on GPIO[18] Pressed[0m
+[0;32mI (592786) GPIO Touch Sensor: GPIO[18] ON[0m
+[0;32mI (592786) mqtts_example: Message published successfully: {"device":18,"value":1}[0m
+[0;32mI (593396) GPIO Touch Sensor: Touch Button on GPIO[18] Pressed[0m
+[0;32mI (593396) GPIO Touch Sensor: GPIO[18] OFF[0m
+[0;32mI (593396) mqtts_example: Message published successfully: {"device":18,"value":0}[0m
+[0;32mI (593776) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (593776) GPIO Touch Sensor: GPIO[7] OFF[0m
+[0;32mI (593776) mqtts_example: Message published successfully: {"device":7,"value":0}[0m
+[0;32mI (594096) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (594096) GPIO Touch Sensor: GPIO[7] ON[0m
+[0;32mI (594096) mqtts_example: Message published successfully: {"device":7,"value":1}[0m
+[0;32mI (594386) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (594386) GPIO Touch Sensor: GPIO[7] OFF[0m
+[0;32mI (594386) mqtts_example: Message published successfully: {"device":7,"value":0}[0m
+[0;32mI (594556) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (594556) GPIO Touch Sensor: GPIO[7] ON[0m
+[0;32mI (594566) mqtts_example: Message published successfully: {"device":7,"value":1}[0m
+[0;32mI (598846) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (598846) GPIO Touch Sensor: GPIO[7] OFF[0m
+[0;32mI (598846) mqtts_example: Message published successfully: {"device":7,"value":0}[0m
+[0;32mI (1195096) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (1195096) GPIO Touch Sensor: GPIO[7] ON[0m
+[0;32mI (1195106) mqtts_example: Message published successfully: {"device":7,"value":1}[0m
+[0;32mI (1202756) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (1202756) GPIO Touch Sensor: GPIO[7] OFF[0m
+[0;32mI (1202756) mqtts_example: Message published successfully: {"device":7,"value":0}[0m
+[0;32mI (1756636) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (1756636) GPIO Touch Sensor: GPIO[7] ON[0m
+[0;32mI (1756636) mqtts_example: Message published successfully: {"device":7,"value":1}[0m
+[0;32mI (1992686) GPIO Touch Sensor: Touch Button on GPIO[6] Pressed[0m
+[0;32mI (1992686) GPIO Touch Sensor: GPIO[6] ON[0m
+[0;32mI (1992696) mqtts_example: Message published successfully: {"device":6,"value":1}[0m
+[0;32mI (2139616) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (2139616) GPIO Touch Sensor: GPIO[7] OFF[0m
+[0;32mI (2139616) mqtts_example: Message published successfully: {"device":7,"value":0}[0m
+[0;32mI (2141576) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (2141576) GPIO Touch Sensor: GPIO[7] ON[0m
+[0;32mI (2141576) mqtts_example: Message published successfully: {"device":7,"value":1}[0m
+[0;32mI (2290786) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (2290786) GPIO Touch Sensor: GPIO[7] OFF[0m
+[0;32mI (2290786) mqtts_example: Message published successfully: {"device":7,"value":0}[0m
+[0;32mI (2293366) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (2293366) GPIO Touch Sensor: GPIO[7] ON[0m
+[0;32mI (2293366) mqtts_example: Message published successfully: {"device":7,"value":1}[0m
+[0;31mE (3602316) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (3602316) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (3602316) mqtt_client: Error transport connect[0m
+[0;32mI (3602316) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (3602326) mqtts_example: Last error reported from esp-tls: 0x8006[0m
+[0;32mI (3602326) mqtts_example: Last errno string (Success)[0m
+[0;32mI (3602336) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3617336) mqtts_example: Other event id:7[0m
+[0;32mI (3617396) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (3617396) mqtts_example: sent subscribe successful, msg_id=35885[0m
+[0;32mI (3617406) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=35885[0m
+[0;32mI (3762656) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (3762656) GPIO Touch Sensor: GPIO[7] OFF[0m
+[0;32mI (3762666) mqtts_example: Message published successfully: {"device":7,"value":0}[0m
+[0;32mI (3896756) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (3896756) GPIO Touch Sensor: GPIO[7] ON[0m
+[0;32mI (3896756) mqtts_example: Message published successfully: {"device":7,"value":1}[0m
+[0;32mI (3898106) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (3898106) GPIO Touch Sensor: GPIO[7] OFF[0m
+[0;32mI (3898106) mqtts_example: Message published successfully: {"device":7,"value":0}[0m
+[0;32mI (3899876) GPIO Touch Sensor: Touch Button on GPIO[6] Pressed[0m
+[0;32mI (3899876) GPIO Touch Sensor: GPIO[6] OFF[0m
+[0;32mI (3899876) mqtts_example: Message published successfully: {"device":6,"value":0}[0m
+[0;32mI (3900826) GPIO Touch Sensor: Touch Button on GPIO[6] Pressed[0m
+[0;32mI (3900826) GPIO Touch Sensor: GPIO[6] ON[0m
+[0;32mI (3900826) mqtts_example: Message published successfully: {"device":6,"value":1}[0m
+[0;32mI (3970676) GPIO Touch Sensor: Touch Button on GPIO[6] Pressed[0m
+[0;32mI (3970676) GPIO Touch Sensor: GPIO[6] OFF[0m
+[0;32mI (3970676) mqtts_example: Message published successfully: {"device":6,"value":0}[0m
+[0;32mI (3973156) GPIO Touch Sensor: Touch Button on GPIO[6] Pressed[0m
+[0;32mI (3973156) GPIO Touch Sensor: GPIO[6] ON[0m
+[0;32mI (3973156) mqtts_example: Message published successfully: {"device":6,"value":1}[0m
+[0;32mI (3974266) GPIO Touch Sensor: Touch Button on GPIO[6] Pressed[0m
+[0;32mI (3974266) GPIO Touch Sensor: GPIO[6] OFF[0m
+[0;32mI (3974276) mqtts_example: Message published successfully: {"device":6,"value":0}[0m
+[0;32mI (3983046) GPIO Touch Sensor: Touch Button on GPIO[6] Pressed[0m
+[0;32mI (3983056) GPIO Touch Sensor: GPIO[6] ON[0m
+[0;32mI (3983056) mqtts_example: Message published successfully: {"device":6,"value":1}[0m
+[0;32mI (4050576) GPIO Touch Sensor: Touch Button on GPIO[6] Pressed[0m
+[0;32mI (4050576) GPIO Touch Sensor: GPIO[6] OFF[0m
+[0;32mI (4050586) mqtts_example: Message published successfully: {"device":6,"value":0}[0m
+[0;32mI (4131486) GPIO Touch Sensor: Touch Button on GPIO[6] Pressed[0m
+[0;32mI (4131486) GPIO Touch Sensor: GPIO[6] ON[0m
+[0;32mI (4131486) mqtts_example: Message published successfully: {"device":6,"value":1}[0m
+[0;32mI (4190646) GPIO Touch Sensor: Touch Button on GPIO[6] Pressed[0m
+[0;32mI (4190646) GPIO Touch Sensor: GPIO[6] OFF[0m
+[0;32mI (4190656) mqtts_example: Message published successfully: {"device":6,"value":0}[0m
+[0;32mI (4233656) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (4233656) GPIO Touch Sensor: GPIO[7] ON[0m
+[0;32mI (4233656) mqtts_example: Message published successfully: {"device":7,"value":1}[0m
+[0;32mI (4241356) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (4241356) GPIO Touch Sensor: GPIO[7] OFF[0m
+[0;32mI (4241356) mqtts_example: Message published successfully: {"device":7,"value":0}[0m
+[0;32mI (4356476) GPIO Touch Sensor: Touch Button on GPIO[6] Pressed[0m
+[0;32mI (4356476) GPIO Touch Sensor: GPIO[6] ON[0m
+[0;32mI (4356476) mqtts_example: Message published successfully: {"device":6,"value":1}[0m
+[0;32mI (4364926) GPIO Touch Sensor: Touch Button on GPIO[6] Pressed[0m
+[0;32mI (4364926) GPIO Touch Sensor: GPIO[6] OFF[0m
+[0;32mI (4364926) mqtts_example: Message published successfully: {"device":6,"value":0}[0m
+[0;32mI (4367156) GPIO Touch Sensor: Touch Button on GPIO[6] Pressed[0m
+[0;32mI (4367156) GPIO Touch Sensor: GPIO[6] ON[0m
+[0;32mI (4367156) mqtts_example: Message published successfully: {"device":6,"value":1}[0m
+[0;32mI (4541946) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (4541946) GPIO Touch Sensor: GPIO[7] ON[0m
+[0;32mI (4541956) mqtts_example: Message published successfully: {"device":7,"value":1}[0m
+[0;32mI (4542546) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (4542546) GPIO Touch Sensor: GPIO[7] OFF[0m
+[0;32mI (4542546) mqtts_example: Message published successfully: {"device":7,"value":0}[0m
+[0;32mI (4543896) GPIO Touch Sensor: Touch Button on GPIO[6] Pressed[0m
+[0;32mI (4543896) GPIO Touch Sensor: GPIO[6] OFF[0m
+[0;32mI (4543906) mqtts_example: Message published successfully: {"device":6,"value":0}[0m
+[0;32mI (4545166) GPIO Touch Sensor: Touch Button on GPIO[18] Pressed[0m
+[0;32mI (4545166) GPIO Touch Sensor: GPIO[18] ON[0m
+[0;32mI (4545166) mqtts_example: Message published successfully: {"device":18,"value":1}[0m
+[0;32mI (4546146) GPIO Touch Sensor: Touch Button on GPIO[18] Pressed[0m
+[0;32mI (4546146) GPIO Touch Sensor: GPIO[18] OFF[0m
+[0;32mI (4546156) mqtts_example: Message published successfully: {"device":18,"value":0}[0m
+[0;32mI (4546856) GPIO Touch Sensor: Touch Button on GPIO[18] Pressed[0m
+[0;32mI (4546856) GPIO Touch Sensor: GPIO[18] ON[0m
+[0;32mI (4546856) mqtts_example: Message published successfully: {"device":18,"value":1}[0m
+[0;32mI (4565026) GPIO Touch Sensor: Touch Button on GPIO[19] Pressed[0m
+[0;32mI (4565026) GPIO Touch Sensor: GPIO[19] ON[0m
+[0;32mI (4565026) mqtts_example: Message published successfully: {"device":19,"value":1}[0m
+[0;32mI (4636386) GPIO Touch Sensor: Touch Button on GPIO[6] Pressed[0m
+[0;32mI (4636386) GPIO Touch Sensor: GPIO[6] ON[0m
+[0;32mI (4636386) mqtts_example: Message published successfully: {"device":6,"value":1}[0m
+[0;32mI (4639136) GPIO Touch Sensor: Touch Button on GPIO[6] Pressed[0m
+[0;32mI (4639136) GPIO Touch Sensor: GPIO[6] OFF[0m
+[0;32mI (4639136) mqtts_example: Message published successfully: {"device":6,"value":0}[0m
+I (4960096) wifi:bcn_timeout,ap_probe_send_start
+I (4962596) wifi:ap_probe_send over, resett wifi status to disassoc
+I (4962596) wifi:state: run -> init (c800)
+I (4962596) wifi:pm stop, total sleep time: 4755975845 us / 4961985807 us
+
+I (4962596) wifi:<ba-del>idx:0, tid:0
+I (4962606) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (4962616) GPIO Touch Sensor: retry to connect to the AP[0m
+[0;32mI (4962616) GPIO Touch Sensor: connect to the AP fail[0m
+[0;31mE (4962626) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (4962636) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;32mI (4962636) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+I (4962666) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (4962666) wifi:state: init -> auth (b0)
+I (4962676) wifi:state: auth -> assoc (0)
+I (4962676) wifi:state: assoc -> run (10)
+I (4962936) wifi:connected with Turtlee, aid = 3, channel 6, BW20, bssid = 3a:c2:36:c5:10:87
+I (4962946) wifi:security: WPA2-PSK, phy: bgn, rssi: -35
+I (4962946) wifi:pm start, type: 1
+
+I (4962946) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (4962996) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+[0;32mI (4963956) esp_netif_handlers: sta ip: 172.20.10.6, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (4963956) GPIO Touch Sensor: got ip:172.20.10.6[0m
+I (4967306) wifi:<ba-add>idx:0 (ifx:0, 3a:c2:36:c5:10:87), tid:0, ssn:2, winSize:64
+[0;32mI (4972646) mqtts_example: Other event id:7[0m
+[0;32mI (4972696) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (4972696) mqtts_example: sent subscribe successful, msg_id=34973[0m
+[0;32mI (4972706) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=34973[0m
+[0;32mI (4976436) GPIO Touch Sensor: Touch Button on GPIO[7] Pressed[0m
+[0;32mI (4976436) GPIO Touch Sensor: GPIO[7] ON[0m
+[0;32mI (4976436) mqtts_example: Message published successfully: {"device":7,"value":1}[0m
+[0;32mI (4977176) GPIO Touch Sensor: Touch Button on GPIO[6] Pressed[0m
+[0;32mI (4977176) GPIO Touch Sensor: GPIO[6] ON[0m
+[0;32mI (4977176) mqtts_example: Message published successfully: {"device":6,"value":1}[0m
+[0;32mI (4977726) GPIO Touch Sensor: Touch Button on GPIO[18] Pressed[0m
+[0;32mI (4977726) GPIO Touch Sensor: GPIO[18] OFF[0m
+[0;32mI (4977726) mqtts_example: Message published successfully: {"device":18,"value":0}[0m
+[0;32mI (4978306) GPIO Touch Sensor: Touch Button on GPIO[19] Pressed[0m
+[0;32mI (4978306) GPIO Touch Sensor: GPIO[19] OFF[0m
+[0;32mI (4978316) mqtts_example: Message published successfully: {"device":19,"value":0}[0m
+[0;32mI (5045906) GPIO Touch Sensor: Touch Button on GPIO[6] Pressed[0m
+[0;32mI (5045916) GPIO Touch Sensor: GPIO[6] OFF[0m
+[0;32mI (5045916) mqtts_example: Message published successfully: {"device":6,"value":0}[0m
+[0;32mI (5072666) GPIO Touch Sensor: Touch Button on GPIO[18] Pressed[0m
+[0;32mI (5072666) GPIO Touch Sensor: GPIO[18] ON[0m
+[0;32mI (5072676) mqtts_example: Message published successfully: {"device":18,"value":1}[0m
+[0;32mI (5077416) GPIO Touch Sensor: Touch Button on GPIO[6] Pressed[0m
+[0;32mI (5077416) GPIO Touch Sensor: GPIO[6] ON[0m
+[0;32mI (5077416) mqtts_example: Message published successfully: {"device":6,"value":1}[0m
+[0;32mI (5080506) GPIO Touch Sensor: Touch Button on GPIO[6] Pressed[0m
+[0;32mI (5080506) GPIO Touch Sensor: GPIO[6] OFF[0m
+[0;32mI (5080506) mqtts_example: Message published successfully: {"device":6,"value":0}[0m
+[0;32mI (5091546) GPIO Touch Sensor: Touch Button on GPIO[19] Pressed[0m
+[0;32mI (5091546) GPIO Touch Sensor: GPIO[19] ON[0m
+[0;32mI (5091546) mqtts_example: Message published successfully: {"device":19,"value":1}[0m
+[0;32mI (5122936) GPIO Touch Sensor: Touch Button on GPIO[19] Pressed[0m
+[0;32mI (5122936) GPIO Touch Sensor: GPIO[19] OFF[0m
+[0;32mI (5122936) mqtts_example: Message published successfully: {"device":19,"value":0}[0m

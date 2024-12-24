@@ -1,0 +1,20 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.adapterTargetName": "esp32c3",
+  "files.associations": {
+    "esp_system.h": "c",
+    "dns.h": "c",
+    "sockets.h": "c",
+    "cstdint": "c",
+    "queue.h": "c",
+    "esp_timer.h": "c",
+    "optional": "c",
+    "ratio": "c",
+    "system_error": "c",
+    "array": "c",
+    "functional": "c",
+    "tuple": "c",
+    "type_traits": "c",
+    "utility": "c"
+  }
+}

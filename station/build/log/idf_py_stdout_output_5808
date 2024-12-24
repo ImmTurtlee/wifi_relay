@@ -1,0 +1,1116 @@
+x�xxx�x�x��x�x�x���xx�m�ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (30) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Dec 16 2024 13:23:05[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (39) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=24b40h (150336) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=00034b68 vaddr=3fc91c00 size=02b10h ( 11024) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=00037680 vaddr=40380000 size=08998h ( 35224) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=a1904h (661764) map[0m
+[0;32mI (240) esp_image: segment 4: paddr=000e192c vaddr=40388998 size=090cch ( 37068) load[0m
+[0;32mI (253) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (253) boot: Disabling RNG early entropy source...[0m
+[0;32mI (265) cpu_start: Unicore app[0m
+[0;32mI (273) cpu_start: Pro cpu start user code[0m
+[0;32mI (273) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (273) cpu_start: Application information:[0m
+[0;32mI (276) cpu_start: Project name:     wifi_station[0m
+[0;32mI (282) cpu_start: App version:      1[0m
+[0;32mI (286) cpu_start: Compile time:     Dec 16 2024 13:22:55[0m
+[0;32mI (292) cpu_start: ELF file SHA256:  9cdfbaf4d...[0m
+[0;32mI (298) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (303) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (308) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (313) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (317) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (325) heap_init: At 3FC98D60 len 000272A0 (156 KiB): RAM[0m
+[0;32mI (331) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (338) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (345) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (352) spi_flash: detected chip: generic[0m
+[0;32mI (356) spi_flash: flash io: dio[0m
+[0;32mI (360) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (366) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (374) main_task: Started on CPU0[0m
+[0;32mI (374) main_task: Calling app_main()[0m
+[0;32mI (384) GPIO Touch Sensor: ESP_WIFI_MODE_STA[0m
+[0;32mI (384) pp: pp rom version: 9387209[0m
+[0;32mI (384) net80211: net80211 rom version: 9387209[0m
+I (404) wifi:wifi driver task: 3fca18ec, prio:23, stack:6656, core=0
+I (404) wifi:wifi firmware version: 3e0076f
+I (404) wifi:wifi certification version: v7.0
+I (404) wifi:config NVS flash: enabled
+I (414) wifi:config nano formating: disabled
+I (414) wifi:Init data frame dynamic rx buffer num: 32
+I (414) wifi:Init static rx mgmt buffer num: 5
+I (424) wifi:Init management short buffer num: 32
+I (424) wifi:Init dynamic tx buffer num: 32
+I (434) wifi:Init static tx FG buffer num: 2
+I (434) wifi:Init static rx buffer size: 1600
+I (434) wifi:Init static rx buffer num: 10
+I (444) wifi:Init dynamic rx buffer num: 32
+[0;32mI (444) wifi_init: rx ba win: 6[0m
+[0;32mI (454) wifi_init: tcpip mbox: 32[0m
+[0;32mI (454) wifi_init: udp mbox: 6[0m
+[0;32mI (454) wifi_init: tcp mbox: 6[0m
+[0;32mI (464) wifi_init: tcp tx win: 5760[0m
+[0;32mI (464) wifi_init: tcp rx win: 5760[0m
+[0;32mI (474) wifi_init: tcp mss: 1440[0m
+[0;32mI (474) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (474) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (484) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+I (544) wifi:mode : sta (34:85:18:02:2d:24)
+I (544) wifi:enable tsf
+[0;32mI (544) GPIO Touch Sensor: wifi_init_sta finished.[0m
+[0;32mI (2954) GPIO Touch Sensor: retry to connect to the AP[0m
+[0;32mI (2954) GPIO Touch Sensor: connect to the AP fail[0m
+[0;32mI (5364) GPIO Touch Sensor: retry to connect to the AP[0m
+[0;32mI (5364) GPIO Touch Sensor: connect to the AP fail[0m
+[0;32mI (7774) GPIO Touch Sensor: retry to connect to the AP[0m
+[0;32mI (7774) GPIO Touch Sensor: connect to the AP fail[0m
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (30) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Dec 16 2024 13:23:05[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (39) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=24b40h (150336) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=00034b68 vaddr=3fc91c00 size=02b10h ( 11024) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=00037680 vaddr=40380000 size=08998h ( 35224) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=a1904h (661764) map[0m
+[0;32mI (240) esp_image: segment 4: paddr=000e192c vaddr=40388998 size=090cch ( 37068) load[0m
+[0;32mI (253) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (253) boot: Disabling RNG early entropy source...[0m
+[0;32mI (265) cpu_start: Unicore app[0m
+[0;32mI (273) cpu_start: Pro cpu start user code[0m
+[0;32mI (273) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (273) cpu_start: Application information:[0m
+[0;32mI (276) cpu_start: Project name:     wifi_station[0m
+[0;32mI (282) cpu_start: App version:      1[0m
+[0;32mI (286) cpu_start: Compile time:     Dec 16 2024 13:22:55[0m
+[0;32mI (292) cpu_start: ELF file SHA256:  9cdfbaf4d...[0m
+[0;32mI (298) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (303) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (308) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (313) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (317) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (325) heap_init: At 3FC98D60 len 000272A0 (156 KiB): RAM[0m
+[0;32mI (331) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (338) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (345) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (352) spi_flash: detected chip: generic[0m
+[0;32mI (356) spi_flash: flash io: dio[0m
+[0;32mI (360) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (366) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (374) main_task: Started on CPU0[0m
+[0;32mI (374) main_task: Calling app_main()[0m
+[0;32mI (384) GPIO Touch Sensor: ESP_WIFI_MODE_STA[0m
+[0;32mI (384) pp: pp rom version: 9387209[0m
+[0;32mI (384) net80211: net80211 rom version: 9387209[0m
+I (404) wifi:wifi driver task: 3fca18ec, prio:23, stack:6656, core=0
+I (404) wifi:wifi firmware version: 3e0076f
+I (404) wifi:wifi certification version: v7.0
+I (404) wifi:config NVS flash: enabled
+I (414) wifi:config nano formating: disabled
+I (414) wifi:Init data frame dynamic rx buffer num: 32
+I (414) wifi:Init static rx mgmt buffer num: 5
+I (424) wifi:Init management short buffer num: 32
+I (424) wifi:Init dynamic tx buffer num: 32
+I (434) wifi:Init static tx FG buffer num: 2
+I (434) wifi:Init static rx buffer size: 1600
+I (434) wifi:Init static rx buffer num: 10
+I (444) wifi:Init dynamic rx buffer num: 32
+[0;32mI (444) wifi_init: rx ba win: 6[0m
+[0;32mI (454) wifi_init: tcpip mbox: 32[0m
+[0;32mI (454) wifi_init: udp mbox: 6[0m
+[0;32mI (454) wifi_init: tcp mbox: 6[0m
+[0;32mI (464) wifi_init: tcp tx win: 5760[0m
+[0;32mI (464) wifi_init: tcp rx win: 5760[0m
+[0;32mI (474) wifi_init: tcp mss: 1440[0m
+[0;32mI (474) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (474) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (484) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+I (524) wifi:mode : sta (34:85:18:02:2d:24)
+I (524) wifi:enable tsf
+[0;32mI (524) GPIO Touch Sensor: wifi_init_sta finished.[0m
+[0;32mI (2934) GPIO Touch Sensor: retry to connect to the AP[0m
+[0;32mI (2934) GPIO Touch Sensor: connect to the AP fail[0m
+[0;32mI (5344) GPIO Touch Sensor: retry to connect to the AP[0m
+[0;32mI (5344) GPIO Touch Sensor: connect to the AP fail[0m
+[0;32mI (7754) GPIO Touch Sensor: retry to connect to the AP[0m
+[0;32mI (7754) GPIO Touch Sensor: connect to the AP fail[0m
+[0;32mI (10164) GPIO Touch Sensor: retry to connect to the AP[0m
+[0;32mI (10164) GPIO Touch Sensor: connect to the AP fail[0m
+I (10174) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (10174) wifi:state: init -> auth (b0)
+I (10184) wifi:state: auth -> assoc (0)
+I (10184) wifi:state: assoc -> run (10)
+I (10304) wifi:connected with Turtlee, aid = 1, channel 6, BW20, bssid = 9e:fb:6e:87:8a:ce
+I (10304) wifi:security: WPA2-PSK, phy: bgn, rssi: -41
+I (10304) wifi:pm start, type: 1
+
+I (10304) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (10314) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (10374) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (11824) esp_netif_handlers: sta ip: 172.20.10.5, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (11824) GPIO Touch Sensor: got ip:172.20.10.5[0m
+[0;32mI (11824) GPIO Touch Sensor: connected to ap SSID:Turtlee password:11111111[0m
+[0;32mI (11834) mqtts_example: [APP] Free memory: 229848 bytes[0m
+[0;32mI (11834) mqtts_example: Other event id:7[0m
+[0;32mI (11844) GPIO Touch Sensor: Initializing touch sensors using GPIO[0m
+[0;32mI (11844) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+I (11854) wifi:<ba-add>idx:0 (ifx:0, 9e:fb:6e:87:8a:ce), tid:0, ssn:2, winSize:64
+[0;32mI (11864) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (11874) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (11884) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (11894) gpio: GPIO[6]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (11904) gpio: GPIO[7]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (11914) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:3 [0m
+[0;32mI (11924) gpio: GPIO[5]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:3 [0m
+[0;32mI (11934) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:3 [0m
+[0;32mI (11944) gpio: GPIO[7]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:3 [0m
+[0;32mI (11954) gpio: GPIO[8]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (13794) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (13794) mqtts_example: sent subscribe successful, msg_id=22458[0m
+[0;32mI (14174) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=22458[0m
+[0;32mI (43894) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/620
+DATA={"method":"GPIO4","params":true}
+[0;32mI (43894) GPIO Touch Sensor: Received method: GPIO4[0m
+[0;32mI (43894) GPIO Touch Sensor: GPIO[GPIO4] -> Params: 1[0m
+[0;32mI (43904) GPIO Touch Sensor: GPIO[GPIO4] -> Output[4]: ON[0m
+LEDs for Sensor 3 updated: ON
+[0;32mI (46734) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/621
+DATA={"method":"GPIO6","params":true}
+[0;32mI (46734) GPIO Touch Sensor: Received method: GPIO6[0m
+[0;32mI (46734) GPIO Touch Sensor: GPIO[GPIO6] -> Params: 1[0m
+[0;32mI (46744) GPIO Touch Sensor: GPIO[GPIO6] -> Output[6]: ON[0m
+LEDs for Sensor 1 updated: ON
+[0;32mI (47444) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/622
+DATA={"method":"GPIO5","params":false}
+[0;32mI (47444) GPIO Touch Sensor: Received method: GPIO5[0m
+[0;32mI (47454) GPIO Touch Sensor: GPIO[GPIO5] -> Params: 0[0m
+[0;32mI (47454) GPIO Touch Sensor: GPIO[GPIO5] -> Output[5]: OFF[0m
+LEDs for Sensor 2 updated: OFF
+[0;32mI (49494) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/623
+DATA={"method":"GPIO6","params":false}
+[0;32mI (49494) GPIO Touch Sensor: Received method: GPIO6[0m
+[0;32mI (49504) GPIO Touch Sensor: GPIO[GPIO6] -> Params: 0[0m
+[0;32mI (49504) GPIO Touch Sensor: GPIO[GPIO6] -> Output[6]: OFF[0m
+LEDs for Sensor 1 updated: OFF
+[0;32mI (50524) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/624
+DATA={"method":"GPIO7","params":false}
+[0;32mI (50524) GPIO Touch Sensor: Received method: GPIO7[0m
+[0;32mI (50524) GPIO Touch Sensor: GPIO[GPIO7] -> Params: 0[0m
+[0;32mI (50534) GPIO Touch Sensor: GPIO[GPIO7] -> Output[7]: OFF[0m
+LEDs for Sensor 0 updated: OFF
+[0;32mI (52644) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/625
+DATA={"method":"GPIO4","params":false}
+[0;32mI (52644) GPIO Touch Sensor: Received method: GPIO4[0m
+[0;32mI (52654) GPIO Touch Sensor: GPIO[GPIO4] -> Params: 0[0m
+[0;32mI (52654) GPIO Touch Sensor: GPIO[GPIO4] -> Output[4]: OFF[0m
+LEDs for Sensor 3 updated: OFF
+[0;32mI (57684) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/626
+DATA={"method":"red","params":255}
+[0;32mI (57684) GPIO Touch Sensor: Received method: red[0m
+[0;32mI (57694) GPIO Touch Sensor: Color[red] -> Params: 255[0m
+[0;32mI (57704) LED_UPDATE: Updated LED[0] Red to 255[0m
+[0;32mI (57704) LED_UPDATE: Updated LED[1] Red to 255[0m
+[0;32mI (57714) LED_UPDATE: Updated LED[2] Red to 255[0m
+[0;32mI (57714) LED_UPDATE: Updated LED[3] Red to 255[0m
+[0;32mI (57724) LED_UPDATE: Updated LED[4] Red to 255[0m
+[0;32mI (57724) LED_UPDATE: Updated LED[5] Red to 255[0m
+[0;32mI (57734) LED_UPDATE: Updated LED[6] Red to 255[0m
+[0;32mI (57734) LED_UPDATE: Updated LED[7] Red to 255[0m
+[0;32mI (59734) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/627
+DATA={"method":"blue","params":127.5}
+[0;32mI (59734) GPIO Touch Sensor: Received method: blue[0m
+[0;32mI (59744) GPIO Touch Sensor: Color[blue] -> Params: 127[0m
+[0;32mI (59744) LED_UPDATE: Updated LED[0] Blue to 127[0m
+[0;32mI (59754) LED_UPDATE: Updated LED[1] Blue to 127[0m
+[0;32mI (59754) LED_UPDATE: Updated LED[2] Blue to 127[0m
+[0;32mI (59764) LED_UPDATE: Updated LED[3] Blue to 127[0m
+[0;32mI (59764) LED_UPDATE: Updated LED[4] Blue to 127[0m
+[0;32mI (59774) LED_UPDATE: Updated LED[5] Blue to 127[0m
+[0;32mI (59774) LED_UPDATE: Updated LED[6] Blue to 127[0m
+[0;32mI (59784) LED_UPDATE: Updated LED[7] Blue to 127[0m
+[0;32mI (66304) GPIO Touch Sensor: Button on GPIO[4] Pressed[0m
+[0;32mI (68914) GPIO Touch Sensor: GPIO[4] Long Press Detected![0m
+[0;32mI (68914) GPIO Touch Sensor: GPIO[4] Long Press -> Special Mode Activated![0m
+[0;32mI (68914) GPIO Touch Sensor: Special Mode Activated for Sensor[3], GPIO[4][0m
+[0;32mI (70694) GPIO Touch Sensor: Button on GPIO[5] Pressed[0m
+[0;32mI (73514) GPIO Touch Sensor: GPIO[5] Long Press Detected![0m
+[0;32mI (73514) GPIO Touch Sensor: GPIO[5] Long Press -> Special Mode Activated![0m
+[0;32mI (73524) GPIO Touch Sensor: Special Mode Activated for Sensor[2], GPIO[5][0m
+[0;32mI (76224) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/628
+DATA={"method":"rainbow","params":true}
+[0;32mI (76224) GPIO Touch Sensor: Received method: rainbow[0m
+[0;32mI (76224) GPIO Touch Sensor: Starting gradient effect.[0m
+[0;32mI (227464) GPIO Touch Sensor: Button on GPIO[4] Pressed[0m
+[0;32mI (232674) GPIO Touch Sensor: GPIO[4] Long Press Detected![0m
+[0;32mI (232674) GPIO Touch Sensor: GPIO[4] Long Press -> Special Mode Activated![0m
+[0;32mI (232674) GPIO Touch Sensor: Special Mode Activated for Sensor[3], GPIO[4][0m
+[0;32mI (241304) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/629
+DATA={"method":"blue","params":95.625}
+[0;32mI (241304) GPIO Touch Sensor: Received method: blue[0m
+[0;32mI (241304) GPIO Touch Sensor: Stopping gradient effect due to other action.[0m
+[0;32mI (241314) GPIO Touch Sensor: Color[blue] -> Params: 95[0m
+[0;32mI (241324) LED_UPDATE: Updated LED[0] Blue to 95[0m
+[0;32mI (241324) LED_UPDATE: Updated LED[1] Blue to 95[0m
+[0;32mI (241334) LED_UPDATE: Updated LED[2] Blue to 95[0m
+[0;32mI (241334) LED_UPDATE: Updated LED[3] Blue to 95[0m
+[0;32mI (241344) LED_UPDATE: Updated LED[4] Blue to 95[0m
+[0;32mI (241344) LED_UPDATE: Updated LED[5] Blue to 95[0m
+[0;32mI (241354) LED_UPDATE: Updated LED[6] Blue to 95[0m
+[0;32mI (241354) LED_UPDATE: Updated LED[7] Blue to 95[0m
+[0;32mI (242064) GPIO Touch Sensor: Button on GPIO[4] Pressed[0m
+[0;32mI (245564) GPIO Touch Sensor: GPIO[4] Long Press Detected![0m
+[0;32mI (245564) GPIO Touch Sensor: GPIO[4] Long Press -> Special Mode Activated![0m
+[0;32mI (245564) GPIO Touch Sensor: Special Mode Activated for Sensor[3], GPIO[4][0m
+[0;32mI (246494) GPIO Touch Sensor: Button on GPIO[4] Pressed[0m
+[0;32mI (248594) GPIO Touch Sensor: GPIO[4] Long Press Detected![0m
+[0;32mI (248594) GPIO Touch Sensor: GPIO[4] Long Press -> Special Mode Activated![0m
+[0;32mI (248604) GPIO Touch Sensor: Special Mode Activated for Sensor[3], GPIO[4][0m
+[0;32mI (430014) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/630
+DATA={"method":"blue","params":255}
+[0;32mI (430014) GPIO Touch Sensor: Received method: blue[0m
+[0;32mI (430014) GPIO Touch Sensor: Color[blue] -> Params: 255[0m
+[0;32mI (430024) LED_UPDATE: Updated LED[0] Blue to 255[0m
+[0;32mI (430034) LED_UPDATE: Updated LED[1] Blue to 255[0m
+[0;32mI (430034) LED_UPDATE: Updated LED[2] Blue to 255[0m
+[0;32mI (430044) LED_UPDATE: Updated LED[3] Blue to 255[0m
+[0;32mI (430044) LED_UPDATE: Updated LED[4] Blue to 255[0m
+[0;32mI (430054) LED_UPDATE: Updated LED[5] Blue to 255[0m
+[0;32mI (430054) LED_UPDATE: Updated LED[6] Blue to 255[0m
+[0;32mI (430064) LED_UPDATE: Updated LED[7] Blue to 255[0m
+[0;32mI (433294) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/631
+DATA={"method":"GPIO4","params":true}
+[0;32mI (433294) GPIO Touch Sensor: Received method: GPIO4[0m
+[0;32mI (433304) GPIO Touch Sensor: GPIO[GPIO4] -> Params: 1[0m
+[0;32mI (433314) GPIO Touch Sensor: GPIO[GPIO4] -> Output[4]: ON[0m
+LEDs for Sensor 3 updated: ON
+[0;32mI (434924) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/632
+DATA={"method":"GPIO4","params":false}
+[0;32mI (434924) GPIO Touch Sensor: Received method: GPIO4[0m
+[0;32mI (434934) GPIO Touch Sensor: GPIO[GPIO4] -> Params: 0[0m
+[0;32mI (434934) GPIO Touch Sensor: GPIO[GPIO4] -> Output[4]: OFF[0m
+LEDs for Sensor 3 updated: OFF
+[0;32mI (436054) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/633
+DATA={"method":"GPIO4","params":true}
+[0;32mI (436054) GPIO Touch Sensor: Received method: GPIO4[0m
+[0;32mI (436054) GPIO Touch Sensor: GPIO[GPIO4] -> Params: 1[0m
+[0;32mI (436064) GPIO Touch Sensor: GPIO[GPIO4] -> Output[4]: ON[0m
+LEDs for Sensor 3 updated: ON
+[0;32mI (436974) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/634
+DATA={"method":"GPIO4","params":false}
+[0;32mI (436974) GPIO Touch Sensor: Received method: GPIO4[0m
+[0;32mI (436974) GPIO Touch Sensor: GPIO[GPIO4] -> Params: 0[0m
+[0;32mI (436984) GPIO Touch Sensor: GPIO[GPIO4] -> Output[4]: OFF[0m
+LEDs for Sensor 3 updated: OFF
+[0;32mI (438404) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/635
+DATA={"method":"GPIO7","params":true}
+[0;32mI (438404) GPIO Touch Sensor: Received method: GPIO7[0m
+[0;32mI (438414) GPIO Touch Sensor: GPIO[GPIO7] -> Params: 1[0m
+[0;32mI (438414) GPIO Touch Sensor: GPIO[GPIO7] -> Output[7]: ON[0m
+LEDs for Sensor 0 updated: ON
+[0;32mI (439674) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/636
+DATA={"method":"GPIO7","params":false}
+[0;32mI (439684) GPIO Touch Sensor: Received method: GPIO7[0m
+[0;32mI (439684) GPIO Touch Sensor: GPIO[GPIO7] -> Params: 0[0m
+[0;32mI (439694) GPIO Touch Sensor: GPIO[GPIO7] -> Output[7]: OFF[0m
+LEDs for Sensor 0 updated: OFF
+[0;32mI (441684) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/637
+DATA={"method":"GPIO6","params":true}
+[0;32mI (441684) GPIO Touch Sensor: Received method: GPIO6[0m
+[0;32mI (441684) GPIO Touch Sensor: GPIO[GPIO6] -> Params: 1[0m
+[0;32mI (441694) GPIO Touch Sensor: GPIO[GPIO6] -> Output[6]: ON[0m
+LEDs for Sensor 1 updated: ON
+[0;32mI (442804) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/638
+DATA={"method":"GPIO6","params":false}
+[0;32mI (442804) GPIO Touch Sensor: Received method: GPIO6[0m
+[0;32mI (442814) GPIO Touch Sensor: GPIO[GPIO6] -> Params: 0[0m
+[0;32mI (442824) GPIO Touch Sensor: GPIO[GPIO6] -> Output[6]: OFF[0m
+LEDs for Sensor 1 updated: OFF
+[0;32mI (444544) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/639
+DATA={"method":"GPIO5","params":true}
+[0;32mI (444554) GPIO Touch Sensor: Received method: GPIO5[0m
+[0;32mI (444554) GPIO Touch Sensor: GPIO[GPIO5] -> Params: 1[0m
+[0;32mI (444564) GPIO Touch Sensor: GPIO[GPIO5] -> Output[5]: ON[0m
+LEDs for Sensor 2 updated: ON
+[0;32mI (445474) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/640
+DATA={"method":"GPIO5","params":false}
+[0;32mI (445474) GPIO Touch Sensor: Received method: GPIO5[0m
+[0;32mI (445484) GPIO Touch Sensor: GPIO[GPIO5] -> Params: 0[0m
+[0;32mI (445484) GPIO Touch Sensor: GPIO[GPIO5] -> Output[5]: OFF[0m
+LEDs for Sensor 2 updated: OFF
+[0;32mI (448644) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/641
+DATA={"method":"GPIO4","params":true}
+[0;32mI (448644) GPIO Touch Sensor: Received method: GPIO4[0m
+[0;32mI (448654) GPIO Touch Sensor: GPIO[GPIO4] -> Params: 1[0m
+[0;32mI (448664) GPIO Touch Sensor: GPIO[GPIO4] -> Output[4]: ON[0m
+LEDs for Sensor 3 updated: ON
+[0;32mI (449594) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/642
+DATA={"method":"GPIO7","params":true}
+[0;32mI (449594) GPIO Touch Sensor: Received method: GPIO7[0m
+[0;32mI (449604) GPIO Touch Sensor: GPIO[GPIO7] -> Params: 1[0m
+[0;32mI (449614) GPIO Touch Sensor: GPIO[GPIO7] -> Output[7]: ON[0m
+LEDs for Sensor 0 updated: ON
+[0;32mI (450184) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/643
+DATA={"method":"GPIO6","params":true}
+[0;32mI (450184) GPIO Touch Sensor: Received method: GPIO6[0m
+[0;32mI (450194) GPIO Touch Sensor: GPIO[GPIO6] -> Params: 1[0m
+[0;32mI (450194) GPIO Touch Sensor: GPIO[GPIO6] -> Output[6]: ON[0m
+LEDs for Sensor 1 updated: ON
+[0;32mI (452434) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/644
+DATA={"method":"GPIO5","params":true}
+[0;32mI (452434) GPIO Touch Sensor: Received method: GPIO5[0m
+[0;32mI (452444) GPIO Touch Sensor: GPIO[GPIO5] -> Params: 1[0m
+[0;32mI (452444) GPIO Touch Sensor: GPIO[GPIO5] -> Output[5]: ON[0m
+LEDs for Sensor 2 updated: ON
+[0;32mI (453464) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/645
+DATA={"method":"GPIO5","params":false}
+[0;32mI (453474) GPIO Touch Sensor: Received method: GPIO5[0m
+[0;32mI (453474) GPIO Touch Sensor: GPIO[GPIO5] -> Params: 0[0m
+[0;32mI (453484) GPIO Touch Sensor: GPIO[GPIO5] -> Output[5]: OFF[0m
+LEDs for Sensor 2 updated: OFF
+[0;32mI (454794) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/646
+DATA={"method":"GPIO6","params":false}
+[0;32mI (454804) GPIO Touch Sensor: Received method: GPIO6[0m
+[0;32mI (454804) GPIO Touch Sensor: GPIO[GPIO6] -> Params: 0[0m
+[0;32mI (454814) GPIO Touch Sensor: GPIO[GPIO6] -> Output[6]: OFF[0m
+LEDs for Sensor 1 updated: OFF
+[0;32mI (455604) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/647
+DATA={"method":"GPIO7","params":false}
+[0;32mI (455604) GPIO Touch Sensor: Received method: GPIO7[0m
+[0;32mI (455614) GPIO Touch Sensor: GPIO[GPIO7] -> Params: 0[0m
+[0;32mI (455624) GPIO Touch Sensor: GPIO[GPIO7] -> Output[7]: OFF[0m
+LEDs for Sensor 0 updated: OFF
+[0;32mI (457354) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/648
+DATA={"method":"GPIO4","params":false}
+[0;32mI (457354) GPIO Touch Sensor: Received method: GPIO4[0m
+[0;32mI (457364) GPIO Touch Sensor: GPIO[GPIO4] -> Params: 0[0m
+[0;32mI (457364) GPIO Touch Sensor: GPIO[GPIO4] -> Output[4]: OFF[0m
+LEDs for Sensor 3 updated: OFF
+[0;32mI (458884) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/649
+DATA={"method":"GPIO7","params":true}
+[0;32mI (458894) GPIO Touch Sensor: Received method: GPIO7[0m
+[0;32mI (458894) GPIO Touch Sensor: GPIO[GPIO7] -> Params: 1[0m
+[0;32mI (458904) GPIO Touch Sensor: GPIO[GPIO7] -> Output[7]: ON[0m
+LEDs for Sensor 0 updated: ON
+[0;32mI (460114) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/650
+DATA={"method":"GPIO6","params":true}
+[0;32mI (460114) GPIO Touch Sensor: Received method: GPIO6[0m
+[0;32mI (460114) GPIO Touch Sensor: GPIO[GPIO6] -> Params: 1[0m
+[0;32mI (460124) GPIO Touch Sensor: GPIO[GPIO6] -> Output[6]: ON[0m
+LEDs for Sensor 1 updated: ON
+[0;32mI (461554) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/651
+DATA={"method":"GPIO5","params":true}
+[0;32mI (461554) GPIO Touch Sensor: Received method: GPIO5[0m
+[0;32mI (461564) GPIO Touch Sensor: GPIO[GPIO5] -> Params: 1[0m
+[0;32mI (461564) GPIO Touch Sensor: GPIO[GPIO5] -> Output[5]: ON[0m
+LEDs for Sensor 2 updated: ON
+[0;32mI (462874) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/652
+DATA={"method":"GPIO4","params":true}
+[0;32mI (462884) GPIO Touch Sensor: Received method: GPIO4[0m
+[0;32mI (462884) GPIO Touch Sensor: GPIO[GPIO4] -> Params: 1[0m
+[0;32mI (462894) GPIO Touch Sensor: GPIO[GPIO4] -> Output[4]: ON[0m
+LEDs for Sensor 3 updated: ON
+[0;32mI (478644) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/653
+DATA={"method":"blue","params":0}
+[0;32mI (478644) GPIO Touch Sensor: Received method: blue[0m
+[0;32mI (478654) GPIO Touch Sensor: Color[blue] -> Params: 0[0m
+[0;32mI (478664) LED_UPDATE: Updated LED[0] Blue to 0[0m
+[0;32mI (478664) LED_UPDATE: Updated LED[1] Blue to 0[0m
+[0;32mI (478674) LED_UPDATE: Updated LED[2] Blue to 0[0m
+[0;32mI (478674) LED_UPDATE: Updated LED[3] Blue to 0[0m
+[0;32mI (478684) LED_UPDATE: Updated LED[4] Blue to 0[0m
+[0;32mI (478684) LED_UPDATE: Updated LED[5] Blue to 0[0m
+[0;32mI (478694) LED_UPDATE: Updated LED[6] Blue to 0[0m
+[0;32mI (478694) LED_UPDATE: Updated LED[7] Blue to 0[0m
+[0;32mI (480184) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/654
+DATA={"method":"green","params":255}
+[0;32mI (480184) GPIO Touch Sensor: Received method: green[0m
+[0;32mI (480194) GPIO Touch Sensor: Color[green] -> Params: 255[0m
+[0;32mI (480194) LED_UPDATE: Updated LED[0] Green to 255[0m
+[0;32mI (480204) LED_UPDATE: Updated LED[1] Green to 255[0m
+[0;32mI (480204) LED_UPDATE: Updated LED[2] Green to 255[0m
+[0;32mI (480214) LED_UPDATE: Updated LED[3] Green to 255[0m
+[0;32mI (480214) LED_UPDATE: Updated LED[4] Green to 255[0m
+[0;32mI (480224) LED_UPDATE: Updated LED[5] Green to 255[0m
+[0;32mI (480224) LED_UPDATE: Updated LED[6] Green to 255[0m
+[0;32mI (480234) LED_UPDATE: Updated LED[7] Green to 255[0m
+[0;32mI (482434) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/655
+DATA={"method":"red","params":127.5}
+[0;32mI (482434) GPIO Touch Sensor: Received method: red[0m
+[0;32mI (482444) GPIO Touch Sensor: Color[red] -> Params: 127[0m
+[0;32mI (482444) LED_UPDATE: Updated LED[0] Red to 127[0m
+[0;32mI (482454) LED_UPDATE: Updated LED[1] Red to 127[0m
+[0;32mI (482454) LED_UPDATE: Updated LED[2] Red to 127[0m
+[0;32mI (482464) LED_UPDATE: Updated LED[3] Red to 127[0m
+[0;32mI (482464) LED_UPDATE: Updated LED[4] Red to 127[0m
+[0;32mI (482474) LED_UPDATE: Updated LED[5] Red to 127[0m
+[0;32mI (482484) LED_UPDATE: Updated LED[6] Red to 127[0m
+[0;32mI (482484) LED_UPDATE: Updated LED[7] Red to 127[0m
+[0;32mI (484894) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/656
+DATA={"method":"green","params":159.375}
+[0;32mI (484894) GPIO Touch Sensor: Received method: green[0m
+[0;32mI (484904) GPIO Touch Sensor: Color[green] -> Params: 159[0m
+[0;32mI (484904) LED_UPDATE: Updated LED[0] Green to 159[0m
+[0;32mI (484914) LED_UPDATE: Updated LED[1] Green to 159[0m
+[0;32mI (484914) LED_UPDATE: Updated LED[2] Green to 159[0m
+[0;32mI (484924) LED_UPDATE: Updated LED[3] Green to 159[0m
+[0;32mI (484924) LED_UPDATE: Updated LED[4] Green to 159[0m
+[0;32mI (484934) LED_UPDATE: Updated LED[5] Green to 159[0m
+[0;32mI (484934) LED_UPDATE: Updated LED[6] Green to 159[0m
+[0;32mI (484944) LED_UPDATE: Updated LED[7] Green to 159[0m
+[0;32mI (487354) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/657
+DATA={"method":"blue","params":223.125}
+[0;32mI (487354) GPIO Touch Sensor: Received method: blue[0m
+[0;32mI (487354) GPIO Touch Sensor: Color[blue] -> Params: 223[0m
+[0;32mI (487364) LED_UPDATE: Updated LED[0] Blue to 223[0m
+[0;32mI (487364) LED_UPDATE: Updated LED[1] Blue to 223[0m
+[0;32mI (487374) LED_UPDATE: Updated LED[2] Blue to 223[0m
+[0;32mI (487384) LED_UPDATE: Updated LED[3] Blue to 223[0m
+[0;32mI (487384) LED_UPDATE: Updated LED[4] Blue to 223[0m
+[0;32mI (487394) LED_UPDATE: Updated LED[5] Blue to 223[0m
+[0;32mI (487394) LED_UPDATE: Updated LED[6] Blue to 223[0m
+[0;32mI (487404) LED_UPDATE: Updated LED[7] Blue to 223[0m
+[0;32mI (491144) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/658
+DATA={"method":"GPIO4","params":false}
+[0;32mI (491144) GPIO Touch Sensor: Received method: GPIO4[0m
+[0;32mI (491144) GPIO Touch Sensor: GPIO[GPIO4] -> Params: 0[0m
+[0;32mI (491154) GPIO Touch Sensor: GPIO[GPIO4] -> Output[4]: OFF[0m
+LEDs for Sensor 3 updated: OFF
+[0;32mI (493594) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/659
+DATA={"method":"GPIO4","params":true}
+[0;32mI (493604) GPIO Touch Sensor: Received method: GPIO4[0m
+[0;32mI (493604) GPIO Touch Sensor: GPIO[GPIO4] -> Params: 1[0m
+[0;32mI (493614) GPIO Touch Sensor: GPIO[GPIO4] -> Output[4]: ON[0m
+LEDs for Sensor 3 updated: ON
+[0;32mI (494414) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/660
+DATA={"method":"GPIO4","params":false}
+[0;32mI (494414) GPIO Touch Sensor: Received method: GPIO4[0m
+[0;32mI (494424) GPIO Touch Sensor: GPIO[GPIO4] -> Params: 0[0m
+[0;32mI (494424) GPIO Touch Sensor: GPIO[GPIO4] -> Output[4]: OFF[0m
+LEDs for Sensor 3 updated: OFF
+[0;32mI (496154) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/661
+DATA={"method":"GPIO4","params":true}
+[0;32mI (496154) GPIO Touch Sensor: Received method: GPIO4[0m
+[0;32mI (496164) GPIO Touch Sensor: GPIO[GPIO4] -> Params: 1[0m
+[0;32mI (496174) GPIO Touch Sensor: GPIO[GPIO4] -> Output[4]: ON[0m
+LEDs for Sensor 3 updated: ON
+[0;32mI (497284) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/662
+DATA={"method":"GPIO4","params":false}
+[0;32mI (497284) GPIO Touch Sensor: Received method: GPIO4[0m
+[0;32mI (497294) GPIO Touch Sensor: GPIO[GPIO4] -> Params: 0[0m
+[0;32mI (497294) GPIO Touch Sensor: GPIO[GPIO4] -> Output[4]: OFF[0m
+LEDs for Sensor 3 updated: OFF
+[0;32mI (499024) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/663
+DATA={"method":"GPIO7","params":false}
+[0;32mI (499034) GPIO Touch Sensor: Received method: GPIO7[0m
+[0;32mI (499034) GPIO Touch Sensor: GPIO[GPIO7] -> Params: 0[0m
+[0;32mI (499044) GPIO Touch Sensor: GPIO[GPIO7] -> Output[7]: OFF[0m
+LEDs for Sensor 0 updated: OFF
+[0;32mI (500974) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/664
+DATA={"method":"GPIO6","params":false}
+[0;32mI (500974) GPIO Touch Sensor: Received method: GPIO6[0m
+[0;32mI (500974) GPIO Touch Sensor: GPIO[GPIO6] -> Params: 0[0m
+[0;32mI (500984) GPIO Touch Sensor: GPIO[GPIO6] -> Output[6]: OFF[0m
+LEDs for Sensor 1 updated: OFF
+[0;32mI (502404) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/665
+DATA={"method":"GPIO5","params":false}
+[0;32mI (502404) GPIO Touch Sensor: Received method: GPIO5[0m
+[0;32mI (502414) GPIO Touch Sensor: GPIO[GPIO5] -> Params: 0[0m
+[0;32mI (502414) GPIO Touch Sensor: GPIO[GPIO5] -> Output[5]: OFF[0m
+LEDs for Sensor 2 updated: OFF
+[0;32mI (503424) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/666
+DATA={"method":"rainbow","params":true}
+[0;32mI (503424) GPIO Touch Sensor: Received method: rainbow[0m
+[0;32mI (503434) GPIO Touch Sensor: Starting gradient effect.[0m
+[0;32mI (558724) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/667
+DATA={"method":"blue","params":255}
+[0;32mI (558724) GPIO Touch Sensor: Received method: blue[0m
+[0;32mI (558734) GPIO Touch Sensor: Stopping gradient effect due to other action.[0m
+[0;32mI (558734) GPIO Touch Sensor: Color[blue] -> Params: 255[0m
+[0;32mI (558744) LED_UPDATE: Updated LED[0] Blue to 255[0m
+[0;32mI (558754) LED_UPDATE: Updated LED[1] Blue to 255[0m
+[0;32mI (558754) LED_UPDATE: Updated LED[2] Blue to 255[0m
+[0;32mI (558764) LED_UPDATE: Updated LED[3] Blue to 255[0m
+[0;32mI (558764) LED_UPDATE: Updated LED[4] Blue to 255[0m
+[0;32mI (558774) LED_UPDATE: Updated LED[5] Blue to 255[0m
+[0;32mI (558774) LED_UPDATE: Updated LED[6] Blue to 255[0m
+[0;32mI (558784) LED_UPDATE: Updated LED[7] Blue to 255[0m
+[0;32mI (558794) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/668
+DATA={"method":"green","params":255}
+[0;32mI (558794) GPIO Touch Sensor: Received method: green[0m
+[0;32mI (558804) GPIO Touch Sensor: Color[green] -> Params: 255[0m
+[0;32mI (558814) LED_UPDATE: Updated LED[0] Green to 255[0m
+[0;32mI (558814) LED_UPDATE: Updated LED[1] Green to 255[0m
+[0;32mI (558824) LED_UPDATE: Updated LED[2] Green to 255[0m
+[0;32mI (558824) LED_UPDATE: Updated LED[3] Green to 255[0m
+[0;32mI (558834) LED_UPDATE: Updated LED[4] Green to 255[0m
+[0;32mI (558834) LED_UPDATE: Updated LED[5] Green to 255[0m
+[0;32mI (558844) LED_UPDATE: Updated LED[6] Green to 255[0m
+[0;32mI (558844) LED_UPDATE: Updated LED[7] Green to 255[0m
+[0;32mI (560254) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/669
+DATA={"method":"red","params":0}
+[0;32mI (560264) GPIO Touch Sensor: Received method: red[0m
+[0;32mI (560264) GPIO Touch Sensor: Color[red] -> Params: 0[0m
+[0;32mI (560274) LED_UPDATE: Updated LED[0] Red to 0[0m
+[0;32mI (560274) LED_UPDATE: Updated LED[1] Red to 0[0m
+[0;32mI (560284) LED_UPDATE: Updated LED[2] Red to 0[0m
+[0;32mI (560284) LED_UPDATE: Updated LED[3] Red to 0[0m
+[0;32mI (560294) LED_UPDATE: Updated LED[4] Red to 0[0m
+[0;32mI (560294) LED_UPDATE: Updated LED[5] Red to 0[0m
+[0;32mI (560304) LED_UPDATE: Updated LED[6] Red to 0[0m
+[0;32mI (560304) LED_UPDATE: Updated LED[7] Red to 0[0m
+[0;32mI (562724) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/670
+DATA={"method":"rainbow","params":true}
+[0;32mI (562724) GPIO Touch Sensor: Received method: rainbow[0m
+[0;32mI (562724) GPIO Touch Sensor: Starting gradient effect.[0m
+[0;32mI (618224) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/671
+DATA={"method":"rainbow","params":true}
+[0;32mI (618224) GPIO Touch Sensor: Received method: rainbow[0m
+[0;32mI (618234) GPIO Touch Sensor: Stopping gradient effect.[0m
+[0;32mI (708434) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/672
+DATA={"method":"red","params":255}
+[0;32mI (708434) GPIO Touch Sensor: Received method: red[0m
+[0;32mI (708434) GPIO Touch Sensor: Color[red] -> Params: 255[0m
+[0;32mI (708444) LED_UPDATE: Updated LED[0] Red to 255[0m
+[0;32mI (708444) LED_UPDATE: Updated LED[1] Red to 255[0m
+[0;32mI (708454) LED_UPDATE: Updated LED[2] Red to 255[0m
+[0;32mI (708464) LED_UPDATE: Updated LED[3] Red to 255[0m
+[0;32mI (708464) LED_UPDATE: Updated LED[4] Red to 255[0m
+[0;32mI (708474) LED_UPDATE: Updated LED[5] Red to 255[0m
+[0;32mI (708474) LED_UPDATE: Updated LED[6] Red to 255[0m
+[0;32mI (708484) LED_UPDATE: Updated LED[7] Red to 255[0m
+[0;32mI (710784) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/673
+DATA={"method":"blue","params":0}
+[0;32mI (710784) GPIO Touch Sensor: Received method: blue[0m
+[0;32mI (710794) GPIO Touch Sensor: Color[blue] -> Params: 0[0m
+[0;32mI (710794) LED_UPDATE: Updated LED[0] Blue to 0[0m
+[0;32mI (710804) LED_UPDATE: Updated LED[1] Blue to 0[0m
+[0;32mI (710804) LED_UPDATE: Updated LED[2] Blue to 0[0m
+[0;32mI (710814) LED_UPDATE: Updated LED[3] Blue to 0[0m
+[0;32mI (710814) LED_UPDATE: Updated LED[4] Blue to 0[0m
+[0;32mI (710824) LED_UPDATE: Updated LED[5] Blue to 0[0m
+[0;32mI (710824) LED_UPDATE: Updated LED[6] Blue to 0[0m
+[0;32mI (710834) LED_UPDATE: Updated LED[7] Blue to 0[0m
+[0;32mI (714574) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/674
+DATA={"method":"GPIO6","params":true}
+[0;32mI (714574) GPIO Touch Sensor: Received method: GPIO6[0m
+[0;32mI (714584) GPIO Touch Sensor: GPIO[GPIO6] -> Params: 1[0m
+[0;32mI (714584) GPIO Touch Sensor: GPIO[GPIO6] -> Output[6]: ON[0m
+LEDs for Sensor 1 updated: ON
+[0;32mI (715294) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/675
+DATA={"method":"GPIO7","params":true}
+[0;32mI (715294) GPIO Touch Sensor: Received method: GPIO7[0m
+[0;32mI (715294) GPIO Touch Sensor: GPIO[GPIO7] -> Params: 1[0m
+[0;32mI (715304) GPIO Touch Sensor: GPIO[GPIO7] -> Output[7]: ON[0m
+LEDs for Sensor 0 updated: ON
+[0;32mI (715904) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/676
+DATA={"method":"GPIO7","params":false}
+[0;32mI (715904) GPIO Touch Sensor: Received method: GPIO7[0m
+[0;32mI (715914) GPIO Touch Sensor: GPIO[GPIO7] -> Params: 0[0m
+[0;32mI (715914) GPIO Touch Sensor: GPIO[GPIO7] -> Output[7]: OFF[0m
+LEDs for Sensor 0 updated: OFF
+[0;32mI (717134) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/677
+DATA={"method":"GPIO6","params":false}
+[0;32mI (717134) GPIO Touch Sensor: Received method: GPIO6[0m
+[0;32mI (717144) GPIO Touch Sensor: GPIO[GPIO6] -> Params: 0[0m
+[0;32mI (717144) GPIO Touch Sensor: GPIO[GPIO6] -> Output[6]: OFF[0m
+LEDs for Sensor 1 updated: OFF
+[0;32mI (718464) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/678
+DATA={"method":"GPIO4","params":true}
+[0;32mI (718464) GPIO Touch Sensor: Received method: GPIO4[0m
+[0;32mI (718474) GPIO Touch Sensor: GPIO[GPIO4] -> Params: 1[0m
+[0;32mI (718474) GPIO Touch Sensor: GPIO[GPIO4] -> Output[4]: ON[0m
+LEDs for Sensor 3 updated: ON
+[0;32mI (718974) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/679
+DATA={"method":"GPIO4","params":false}
+[0;32mI (718974) GPIO Touch Sensor: Received method: GPIO4[0m
+[0;32mI (718984) GPIO Touch Sensor: GPIO[GPIO4] -> Params: 0[0m
+[0;32mI (718994) GPIO Touch Sensor: GPIO[GPIO4] -> Output[4]: OFF[0m
+LEDs for Sensor 3 updated: OFF
+[0;32mI (720314) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/680
+DATA={"method":"GPIO5","params":true}
+[0;32mI (720314) GPIO Touch Sensor: Received method: GPIO5[0m
+[0;32mI (720314) GPIO Touch Sensor: GPIO[GPIO5] -> Params: 1[0m
+[0;32mI (720324) GPIO Touch Sensor: GPIO[GPIO5] -> Output[5]: ON[0m
+LEDs for Sensor 2 updated: ON
+[0;32mI (722564) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/681
+DATA={"method":"GPIO5","params":false}
+[0;32mI (722564) GPIO Touch Sensor: Received method: GPIO5[0m
+[0;32mI (722564) GPIO Touch Sensor: GPIO[GPIO5] -> Params: 0[0m
+[0;32mI (722574) GPIO Touch Sensor: GPIO[GPIO5] -> Output[5]: OFF[0m
+LEDs for Sensor 2 updated: OFF
+[0;32mI (849844) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/682
+DATA={"method":"GPIO5","params":false}
+[0;32mI (849844) GPIO Touch Sensor: Received method: GPIO5[0m
+[0;32mI (849844) GPIO Touch Sensor: GPIO[GPIO5] -> Params: 0[0m
+[0;32mI (849854) GPIO Touch Sensor: GPIO[GPIO5] -> Output[5]: OFF[0m
+LEDs for Sensor 2 updated: OFF
+[0;32mI (850664) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/683
+DATA={"method":"GPIO7","params":false}
+[0;32mI (850664) GPIO Touch Sensor: Received method: GPIO7[0m
+[0;32mI (850664) GPIO Touch Sensor: GPIO[GPIO7] -> Params: 0[0m
+[0;32mI (850674) GPIO Touch Sensor: GPIO[GPIO7] -> Output[7]: OFF[0m
+LEDs for Sensor 0 updated: OFF
+[0;32mI (855064) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/684
+DATA={"method":"green","params":255}
+[0;32mI (855064) GPIO Touch Sensor: Received method: green[0m
+[0;32mI (855074) GPIO Touch Sensor: Color[green] -> Params: 255[0m
+[0;32mI (855074) LED_UPDATE: Updated LED[0] Green to 255[0m
+[0;32mI (855084) LED_UPDATE: Updated LED[1] Green to 255[0m
+[0;32mI (855084) LED_UPDATE: Updated LED[2] Green to 255[0m
+[0;32mI (855094) LED_UPDATE: Updated LED[3] Green to 255[0m
+[0;32mI (855094) LED_UPDATE: Updated LED[4] Green to 255[0m
+[0;32mI (855104) LED_UPDATE: Updated LED[5] Green to 255[0m
+[0;32mI (855114) LED_UPDATE: Updated LED[6] Green to 255[0m
+[0;32mI (855114) LED_UPDATE: Updated LED[7] Green to 255[0m
+[0;32mI (864594) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/685
+DATA={"method":"blue","params":127.5}
+[0;32mI (864594) GPIO Touch Sensor: Received method: blue[0m
+[0;32mI (864594) GPIO Touch Sensor: Color[blue] -> Params: 127[0m
+[0;32mI (864604) LED_UPDATE: Updated LED[0] Blue to 127[0m
+[0;32mI (864604) LED_UPDATE: Updated LED[1] Blue to 127[0m
+[0;32mI (864614) LED_UPDATE: Updated LED[2] Blue to 127[0m
+[0;32mI (864624) LED_UPDATE: Updated LED[3] Blue to 127[0m
+[0;32mI (864624) LED_UPDATE: Updated LED[4] Blue to 127[0m
+[0;32mI (864634) LED_UPDATE: Updated LED[5] Blue to 127[0m
+[0;32mI (864634) LED_UPDATE: Updated LED[6] Blue to 127[0m
+[0;32mI (864644) LED_UPDATE: Updated LED[7] Blue to 127[0m
+[0;32mI (866124) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/686
+DATA={"method":"blue","params":0}
+[0;32mI (866124) GPIO Touch Sensor: Received method: blue[0m
+[0;32mI (866134) GPIO Touch Sensor: Color[blue] -> Params: 0[0m
+[0;32mI (866134) LED_UPDATE: Updated LED[0] Blue to 0[0m
+[0;32mI (866144) LED_UPDATE: Updated LED[1] Blue to 0[0m
+[0;32mI (866144) LED_UPDATE: Updated LED[2] Blue to 0[0m
+[0;32mI (866154) LED_UPDATE: Updated LED[3] Blue to 0[0m
+[0;32mI (866154) LED_UPDATE: Updated LED[4] Blue to 0[0m
+[0;32mI (866164) LED_UPDATE: Updated LED[5] Blue to 0[0m
+[0;32mI (866164) LED_UPDATE: Updated LED[6] Blue to 0[0m
+[0;32mI (866174) LED_UPDATE: Updated LED[7] Blue to 0[0m
+[0;32mI (868274) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/687
+DATA={"method":"red","params":159.375}
+[0;32mI (868274) GPIO Touch Sensor: Received method: red[0m
+[0;32mI (868284) GPIO Touch Sensor: Color[red] -> Params: 159[0m
+[0;32mI (868284) LED_UPDATE: Updated LED[0] Red to 159[0m
+[0;32mI (868294) LED_UPDATE: Updated LED[1] Red to 159[0m
+[0;32mI (868294) LED_UPDATE: Updated LED[2] Red to 159[0m
+[0;32mI (868304) LED_UPDATE: Updated LED[3] Red to 159[0m
+[0;32mI (868304) LED_UPDATE: Updated LED[4] Red to 159[0m
+[0;32mI (868314) LED_UPDATE: Updated LED[5] Red to 159[0m
+[0;32mI (868324) LED_UPDATE: Updated LED[6] Red to 159[0m
+[0;32mI (868324) LED_UPDATE: Updated LED[7] Red to 159[0m
+[0;32mI (869914) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/688
+DATA={"method":"red","params":0}
+[0;32mI (869914) GPIO Touch Sensor: Received method: red[0m
+[0;32mI (869924) GPIO Touch Sensor: Color[red] -> Params: 0[0m
+[0;32mI (869924) LED_UPDATE: Updated LED[0] Red to 0[0m
+[0;32mI (869934) LED_UPDATE: Updated LED[1] Red to 0[0m
+[0;32mI (869934) LED_UPDATE: Updated LED[2] Red to 0[0m
+[0;32mI (869944) LED_UPDATE: Updated LED[3] Red to 0[0m
+[0;32mI (869944) LED_UPDATE: Updated LED[4] Red to 0[0m
+[0;32mI (869954) LED_UPDATE: Updated LED[5] Red to 0[0m
+[0;32mI (869954) LED_UPDATE: Updated LED[6] Red to 0[0m
+[0;32mI (869964) LED_UPDATE: Updated LED[7] Red to 0[0m
+[0;32mI (899264) GPIO Touch Sensor: Button on GPIO[4] Pressed[0m
+[0;32mI (899344) GPIO Touch Sensor: GPIO[4] Short Press Detected![0m
+[0;32mI (899344) GPIO Touch Sensor: GPIO[4] -> Output[4]: ON[0m
+[0;32mI (899354) mqtts_example: Message published successfully: {"value4":1}[0m
+LEDs for Sensor 3 updated: ON
+[0;32mI (902104) GPIO Touch Sensor: Button on GPIO[4] Pressed[0m
+[0;32mI (902284) GPIO Touch Sensor: GPIO[4] Short Press Detected![0m
+[0;32mI (902284) GPIO Touch Sensor: GPIO[4] -> Output[4]: OFF[0m
+[0;32mI (902284) mqtts_example: Message published successfully: {"value4":0}[0m
+LEDs for Sensor 3 updated: OFF
+[0;32mI (903364) GPIO Touch Sensor: Button on GPIO[5] Pressed[0m
+[0;32mI (905594) GPIO Touch Sensor: GPIO[5] Long Press Detected![0m
+[0;32mI (905594) GPIO Touch Sensor: GPIO[5] Long Press -> Special Mode Activated![0m
+[0;32mI (905594) GPIO Touch Sensor: Special Mode Activated for Sensor[2], GPIO[5][0m
+[0;32mI (906674) GPIO Touch Sensor: Button on GPIO[5] Pressed[0m
+[0;32mI (907274) GPIO Touch Sensor: GPIO[5] Short Press Detected![0m
+[0;32mI (907274) GPIO Touch Sensor: GPIO[5] -> Output[5]: ON[0m
+[0;32mI (907274) mqtts_example: Message published successfully: {"value5":1}[0m
+LEDs for Sensor 2 updated: ON
+[0;32mI (907494) GPIO Touch Sensor: Button on GPIO[5] Pressed[0m
+[0;32mI (907704) GPIO Touch Sensor: GPIO[5] Short Press Detected![0m
+[0;32mI (907704) GPIO Touch Sensor: GPIO[5] -> Output[5]: OFF[0m
+[0;32mI (907704) mqtts_example: Message published successfully: {"value5":0}[0m
+LEDs for Sensor 2 updated: OFF
+[0;32mI (907984) GPIO Touch Sensor: Button on GPIO[5] Pressed[0m
+[0;32mI (910194) GPIO Touch Sensor: GPIO[5] Long Press Detected![0m
+[0;32mI (910194) GPIO Touch Sensor: GPIO[5] Long Press -> Special Mode Activated![0m
+[0;32mI (910194) GPIO Touch Sensor: Special Mode Activated for Sensor[2], GPIO[5][0m
+[0;32mI (911394) GPIO Touch Sensor: Button on GPIO[5] Pressed[0m
+[0;32mI (912374) GPIO Touch Sensor: GPIO[5] Short Press Detected![0m
+[0;32mI (912374) GPIO Touch Sensor: GPIO[5] -> Output[5]: ON[0m
+[0;32mI (912374) mqtts_example: Message published successfully: {"value5":1}[0m
+LEDs for Sensor 2 updated: ON
+[0;32mI (913184) GPIO Touch Sensor: Button on GPIO[5] Pressed[0m
+[0;32mI (913614) GPIO Touch Sensor: GPIO[5] Short Press Detected![0m
+[0;32mI (913614) GPIO Touch Sensor: GPIO[5] -> Output[5]: OFF[0m
+[0;32mI (913614) mqtts_example: Message published successfully: {"value5":0}[0m
+LEDs for Sensor 2 updated: OFF
+[0;32mI (914634) GPIO Touch Sensor: Button on GPIO[5] Pressed[0m
+[0;32mI (917384) GPIO Touch Sensor: GPIO[5] Long Press Detected![0m
+[0;32mI (917384) GPIO Touch Sensor: GPIO[5] Long Press -> Special Mode Activated![0m
+[0;32mI (917384) GPIO Touch Sensor: Special Mode Activated for Sensor[2], GPIO[5][0m
+[0;32mI (1275034) GPIO Touch Sensor: Button on GPIO[4] Pressed[0m
+[0;32mI (1275164) GPIO Touch Sensor: GPIO[4] Short Press Detected![0m
+[0;32mI (1275164) GPIO Touch Sensor: GPIO[4] -> Output[4]: ON[0m
+[0;32mI (1275174) mqtts_example: Message published successfully: {"value4":1}[0m
+LEDs for Sensor 3 updated: ON
+[0;32mI (1275864) GPIO Touch Sensor: Button on GPIO[4] Pressed[0m
+[0;32mI (1275964) GPIO Touch Sensor: GPIO[4] Short Press Detected![0m
+[0;32mI (1275964) GPIO Touch Sensor: GPIO[4] -> Output[4]: OFF[0m
+[0;32mI (1275964) mqtts_example: Message published successfully: {"value4":0}[0m
+LEDs for Sensor 3 updated: OFF
+[0;32mI (1316464) GPIO Touch Sensor: Button on GPIO[5] Pressed[0m
+[0;32mI (1316564) GPIO Touch Sensor: GPIO[5] Short Press Detected![0m
+[0;32mI (1316564) GPIO Touch Sensor: GPIO[5] -> Output[5]: ON[0m
+[0;32mI (1316564) mqtts_example: Message published successfully: {"value5":1}[0m
+LEDs for Sensor 2 updated: ON
+[0;32mI (1317434) GPIO Touch Sensor: Button on GPIO[5] Pressed[0m
+[0;32mI (1317544) GPIO Touch Sensor: GPIO[5] Short Press Detected![0m
+[0;32mI (1317544) GPIO Touch Sensor: GPIO[5] -> Output[5]: OFF[0m
+[0;32mI (1317544) mqtts_example: Message published successfully: {"value5":0}[0m
+LEDs for Sensor 2 updated: OFF
+[0;32mI (1323134) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/689
+DATA={"method":"green","params":0}
+[0;32mI (1323134) GPIO Touch Sensor: Received method: green[0m
+[0;32mI (1323134) GPIO Touch Sensor: Color[green] -> Params: 0[0m
+[0;32mI (1323144) LED_UPDATE: Updated LED[0] Green to 0[0m
+[0;32mI (1323154) LED_UPDATE: Updated LED[1] Green to 0[0m
+[0;32mI (1323154) LED_UPDATE: Updated LED[2] Green to 0[0m
+[0;32mI (1323164) LED_UPDATE: Updated LED[3] Green to 0[0m
+[0;32mI (1323164) LED_UPDATE: Updated LED[4] Green to 0[0m
+[0;32mI (1323174) LED_UPDATE: Updated LED[5] Green to 0[0m
+[0;32mI (1323174) LED_UPDATE: Updated LED[6] Green to 0[0m
+[0;32mI (1323184) LED_UPDATE: Updated LED[7] Green to 0[0m
+[0;32mI (1325074) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/690
+DATA={"method":"blue","params":255}
+[0;32mI (1325074) GPIO Touch Sensor: Received method: blue[0m
+[0;32mI (1325084) GPIO Touch Sensor: Color[blue] -> Params: 255[0m
+[0;32mI (1325084) LED_UPDATE: Updated LED[0] Blue to 255[0m
+[0;32mI (1325094) LED_UPDATE: Updated LED[1] Blue to 255[0m
+[0;32mI (1325094) LED_UPDATE: Updated LED[2] Blue to 255[0m
+[0;32mI (1325104) LED_UPDATE: Updated LED[3] Blue to 255[0m
+[0;32mI (1325114) LED_UPDATE: Updated LED[4] Blue to 255[0m
+[0;32mI (1325114) LED_UPDATE: Updated LED[5] Blue to 255[0m
+[0;32mI (1325124) LED_UPDATE: Updated LED[6] Blue to 255[0m
+[0;32mI (1325124) LED_UPDATE: Updated LED[7] Blue to 255[0m
+[0;32mI (1327344) GPIO Touch Sensor: Button on GPIO[5] Pressed[0m
+[0;32mI (1330064) GPIO Touch Sensor: GPIO[5] Long Press Detected![0m
+[0;32mI (1330064) GPIO Touch Sensor: GPIO[5] Long Press -> Special Mode Activated![0m
+[0;32mI (1330064) GPIO Touch Sensor: Special Mode Activated for Sensor[2], GPIO[5][0m
+[0;32mI (1343094) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/691
+DATA={"method":"red","params":255}
+[0;32mI (1343094) GPIO Touch Sensor: Received method: red[0m
+[0;32mI (1343104) GPIO Touch Sensor: Color[red] -> Params: 255[0m
+[0;32mI (1343114) LED_UPDATE: Updated LED[0] Red to 255[0m
+[0;32mI (1343114) LED_UPDATE: Updated LED[1] Red to 255[0m
+[0;32mI (1343124) LED_UPDATE: Updated LED[2] Red to 255[0m
+[0;32mI (1343124) LED_UPDATE: Updated LED[3] Red to 255[0m
+[0;32mI (1343134) LED_UPDATE: Updated LED[4] Red to 255[0m
+[0;32mI (1343134) LED_UPDATE: Updated LED[5] Red to 255[0m
+[0;32mI (1343144) LED_UPDATE: Updated LED[6] Red to 255[0m
+[0;32mI (1343144) LED_UPDATE: Updated LED[7] Red to 255[0m
+[0;32mI (1347684) GPIO Touch Sensor: Button on GPIO[5] Pressed[0m
+[0;32mI (1351264) GPIO Touch Sensor: GPIO[5] Long Press Detected![0m
+[0;32mI (1351264) GPIO Touch Sensor: GPIO[5] Long Press -> Special Mode Activated![0m
+[0;32mI (1351274) GPIO Touch Sensor: Special Mode Activated for Sensor[2], GPIO[5][0m
+[0;32mI (1370744) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/692
+DATA={"method":"GPIO5","params":true}
+[0;32mI (1370744) GPIO Touch Sensor: Received method: GPIO5[0m
+[0;32mI (1370754) GPIO Touch Sensor: GPIO[GPIO5] -> Params: 1[0m
+[0;32mI (1370754) GPIO Touch Sensor: GPIO[GPIO5] -> Output[5]: ON[0m
+LEDs for Sensor 2 updated: ON
+[0;32mI (1372894) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/693
+DATA={"method":"GPIO6","params":true}
+[0;32mI (1372894) GPIO Touch Sensor: Received method: GPIO6[0m
+[0;32mI (1372904) GPIO Touch Sensor: GPIO[GPIO6] -> Params: 1[0m
+[0;32mI (1372904) GPIO Touch Sensor: GPIO[GPIO6] -> Output[6]: ON[0m
+LEDs for Sensor 1 updated: ON
+[0;32mI (1373714) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/694
+DATA={"method":"GPIO7","params":true}
+[0;32mI (1373714) GPIO Touch Sensor: Received method: GPIO7[0m
+[0;32mI (1373724) GPIO Touch Sensor: GPIO[GPIO7] -> Params: 1[0m
+[0;32mI (1373724) GPIO Touch Sensor: GPIO[GPIO7] -> Output[7]: ON[0m
+LEDs for Sensor 0 updated: ON
+[0;32mI (1375044) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/695
+DATA={"method":"GPIO4","params":true}
+[0;32mI (1375044) GPIO Touch Sensor: Received method: GPIO4[0m
+[0;32mI (1375054) GPIO Touch Sensor: GPIO[GPIO4] -> Params: 1[0m
+[0;32mI (1375054) GPIO Touch Sensor: GPIO[GPIO4] -> Output[4]: ON[0m
+LEDs for Sensor 3 updated: ON
+[0;32mI (1376684) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/696
+DATA={"method":"GPIO4","params":false}
+[0;32mI (1376684) GPIO Touch Sensor: Received method: GPIO4[0m
+[0;32mI (1376694) GPIO Touch Sensor: GPIO[GPIO4] -> Params: 0[0m
+[0;32mI (1376694) GPIO Touch Sensor: GPIO[GPIO4] -> Output[4]: OFF[0m
+LEDs for Sensor 3 updated: OFF
+[0;32mI (1377604) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/697
+DATA={"method":"GPIO7","params":false}
+[0;32mI (1377604) GPIO Touch Sensor: Received method: GPIO7[0m
+[0;32mI (1377614) GPIO Touch Sensor: GPIO[GPIO7] -> Params: 0[0m
+[0;32mI (1377614) GPIO Touch Sensor: GPIO[GPIO7] -> Output[7]: OFF[0m
+LEDs for Sensor 0 updated: OFF
+[0;32mI (1378434) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/698
+DATA={"method":"GPIO6","params":false}
+[0;32mI (1378434) GPIO Touch Sensor: Received method: GPIO6[0m
+[0;32mI (1378434) GPIO Touch Sensor: GPIO[GPIO6] -> Params: 0[0m
+[0;32mI (1378444) GPIO Touch Sensor: GPIO[GPIO6] -> Output[6]: OFF[0m
+LEDs for Sensor 1 updated: OFF
+[0;32mI (1379144) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/699
+DATA={"method":"GPIO5","params":false}
+[0;32mI (1379144) GPIO Touch Sensor: Received method: GPIO5[0m
+[0;32mI (1379144) GPIO Touch Sensor: GPIO[GPIO5] -> Params: 0[0m
+[0;32mI (1379154) GPIO Touch Sensor: GPIO[GPIO5] -> Output[5]: OFF[0m
+LEDs for Sensor 2 updated: OFF
+[0;32mI (1382014) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/700
+DATA={"method":"GPIO4","params":true}
+[0;32mI (1382014) GPIO Touch Sensor: Received method: GPIO4[0m
+[0;32mI (1382014) GPIO Touch Sensor: GPIO[GPIO4] -> Params: 1[0m
+[0;32mI (1382024) GPIO Touch Sensor: GPIO[GPIO4] -> Output[4]: ON[0m
+LEDs for Sensor 3 updated: ON
+[0;32mI (1383344) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/701
+DATA={"method":"GPIO4","params":false}
+[0;32mI (1383344) GPIO Touch Sensor: Received method: GPIO4[0m
+[0;32mI (1383344) GPIO Touch Sensor: GPIO[GPIO4] -> Params: 0[0m
+[0;32mI (1383354) GPIO Touch Sensor: GPIO[GPIO4] -> Output[4]: OFF[0m
+LEDs for Sensor 3 updated: OFF
+[0;32mI (1393784) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/702
+DATA={"method":"rainbow","params":true}
+[0;32mI (1393784) GPIO Touch Sensor: Received method: rainbow[0m
+[0;32mI (1393794) GPIO Touch Sensor: Starting gradient effect.[0m
+[0;32mI (1441204) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/703
+DATA={"method":"blue","params":95.625}
+[0;32mI (1441204) GPIO Touch Sensor: Received method: blue[0m
+[0;32mI (1441204) GPIO Touch Sensor: Stopping gradient effect due to other action.[0m
+[0;32mI (1441214) GPIO Touch Sensor: Color[blue] -> Params: 95[0m
+[0;32mI (1441224) LED_UPDATE: Updated LED[0] Blue to 95[0m
+[0;32mI (1441224) LED_UPDATE: Updated LED[1] Blue to 95[0m
+[0;32mI (1441234) LED_UPDATE: Updated LED[2] Blue to 95[0m
+[0;32mI (1441234) LED_UPDATE: Updated LED[3] Blue to 95[0m
+[0;32mI (1441244) LED_UPDATE: Updated LED[4] Blue to 95[0m
+[0;32mI (1441244) LED_UPDATE: Updated LED[5] Blue to 95[0m
+[0;32mI (1441254) LED_UPDATE: Updated LED[6] Blue to 95[0m
+[0;32mI (1441254) LED_UPDATE: Updated LED[7] Blue to 95[0m
+[0;32mI (1442834) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/704
+DATA={"method":"green","params":127.5}
+[0;32mI (1442834) GPIO Touch Sensor: Received method: green[0m
+[0;32mI (1442844) GPIO Touch Sensor: Color[green] -> Params: 127[0m
+[0;32mI (1442844) LED_UPDATE: Updated LED[0] Green to 127[0m
+[0;32mI (1442854) LED_UPDATE: Updated LED[1] Green to 127[0m
+[0;32mI (1442854) LED_UPDATE: Updated LED[2] Green to 127[0m
+[0;32mI (1442864) LED_UPDATE: Updated LED[3] Green to 127[0m
+[0;32mI (1442874) LED_UPDATE: Updated LED[4] Green to 127[0m
+[0;32mI (1442874) LED_UPDATE: Updated LED[5] Green to 127[0m
+[0;32mI (1442884) LED_UPDATE: Updated LED[6] Green to 127[0m
+[0;32mI (1442884) LED_UPDATE: Updated LED[7] Green to 127[0m
+[0;32mI (1445804) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/705
+DATA={"method":"green","params":63.75}
+[0;32mI (1445804) GPIO Touch Sensor: Received method: green[0m
+[0;32mI (1445814) GPIO Touch Sensor: Color[green] -> Params: 63[0m
+[0;32mI (1445814) LED_UPDATE: Updated LED[0] Green to 63[0m
+[0;32mI (1445824) LED_UPDATE: Updated LED[1] Green to 63[0m
+[0;32mI (1445824) LED_UPDATE: Updated LED[2] Green to 63[0m
+[0;32mI (1445834) LED_UPDATE: Updated LED[3] Green to 63[0m
+[0;32mI (1445834) LED_UPDATE: Updated LED[4] Green to 63[0m
+[0;32mI (1445844) LED_UPDATE: Updated LED[5] Green to 63[0m
+[0;32mI (1445854) LED_UPDATE: Updated LED[6] Green to 63[0m
+[0;32mI (1445854) LED_UPDATE: Updated LED[7] Green to 63[0m
+[0;32mI (1458394) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/706
+DATA={"method":"GPIO5","params":true}
+[0;32mI (1458404) GPIO Touch Sensor: Received method: GPIO5[0m
+[0;32mI (1458404) GPIO Touch Sensor: GPIO[GPIO5] -> Params: 1[0m
+[0;32mI (1458414) GPIO Touch Sensor: GPIO[GPIO5] -> Output[5]: ON[0m
+LEDs for Sensor 2 updated: ON
+[0;32mI (1460244) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/707
+DATA={"method":"GPIO6","params":true}
+[0;32mI (1460244) GPIO Touch Sensor: Received method: GPIO6[0m
+[0;32mI (1460244) GPIO Touch Sensor: GPIO[GPIO6] -> Params: 1[0m
+[0;32mI (1460254) GPIO Touch Sensor: GPIO[GPIO6] -> Output[6]: ON[0m
+LEDs for Sensor 1 updated: ON
+[0;32mI (1460954) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/708
+DATA={"method":"GPIO7","params":true}
+[0;32mI (1460964) GPIO Touch Sensor: Received method: GPIO7[0m
+[0;32mI (1460964) GPIO Touch Sensor: GPIO[GPIO7] -> Params: 1[0m
+[0;32mI (1460974) GPIO Touch Sensor: GPIO[GPIO7] -> Output[7]: ON[0m
+LEDs for Sensor 0 updated: ON
+[0;32mI (1461474) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/709
+DATA={"method":"GPIO4","params":true}
+[0;32mI (1461474) GPIO Touch Sensor: Received method: GPIO4[0m
+[0;32mI (1461474) GPIO Touch Sensor: GPIO[GPIO4] -> Params: 1[0m
+[0;32mI (1461484) GPIO Touch Sensor: GPIO[GPIO4] -> Output[4]: ON[0m
+LEDs for Sensor 3 updated: ON
+[0;32mI (1491684) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/710
+DATA={"method":"rainbow","params":true}
+[0;32mI (1491694) GPIO Touch Sensor: Received method: rainbow[0m
+[0;32mI (1491694) GPIO Touch Sensor: Starting gradient effect.[0m
+[0;32mI (1551884) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/711
+DATA={"method":"rainbow","params":true}
+[0;32mI (1551894) GPIO Touch Sensor: Received method: rainbow[0m
+[0;32mI (1551894) GPIO Touch Sensor: Stopping gradient effect.[0m
+[0;32mI (1566024) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/712
+DATA={"method":"GPIO7","params":false}
+[0;32mI (1566024) GPIO Touch Sensor: Received method: GPIO7[0m
+[0;32mI (1566024) GPIO Touch Sensor: GPIO[GPIO7] -> Params: 0[0m
+[0;32mI (1566034) GPIO Touch Sensor: GPIO[GPIO7] -> Output[7]: OFF[0m
+LEDs for Sensor 0 updated: OFF
+[0;32mI (1568284) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/713
+DATA={"method":"GPIO7","params":true}
+[0;32mI (1568284) GPIO Touch Sensor: Received method: GPIO7[0m
+[0;32mI (1568284) GPIO Touch Sensor: GPIO[GPIO7] -> Params: 1[0m
+[0;32mI (1568294) GPIO Touch Sensor: GPIO[GPIO7] -> Output[7]: ON[0m
+LEDs for Sensor 0 updated: ON
+[0;32mI (1568684) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/714
+DATA={"method":"GPIO7","params":false}
+[0;32mI (1568684) GPIO Touch Sensor: Received method: GPIO7[0m
+[0;32mI (1568684) GPIO Touch Sensor: GPIO[GPIO7] -> Params: 0[0m
+[0;32mI (1568694) GPIO Touch Sensor: GPIO[GPIO7] -> Output[7]: OFF[0m
+LEDs for Sensor 0 updated: OFF
+[0;32mI (1570014) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/715
+DATA={"method":"GPIO7","params":true}
+[0;32mI (1570014) GPIO Touch Sensor: Received method: GPIO7[0m
+[0;32mI (1570024) GPIO Touch Sensor: GPIO[GPIO7] -> Params: 1[0m
+[0;32mI (1570024) GPIO Touch Sensor: GPIO[GPIO7] -> Output[7]: ON[0m
+LEDs for Sensor 0 updated: ON
+[0;32mI (1570834) mqtts_example: MQTT_EVENT_DATA[0m
+TOPIC=v1/devices/me/rpc/request/716
+DATA={"method":"GPIO7","params":false}
+[0;32mI (1570834) GPIO Touch Sensor: Received method: GPIO7[0m
+[0;32mI (1570844) GPIO Touch Sensor: GPIO[GPIO7] -> Params: 0[0m
+[0;32mI (1570844) GPIO Touch Sensor: GPIO[GPIO7] -> Output[7]: OFF[0m
+LEDs for Sensor 0 updated: OFF

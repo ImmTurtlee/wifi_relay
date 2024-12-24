@@ -1,0 +1,80 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\station\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/station/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5170 bytes. 0x2e90 bytes (36%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/station_example_main.c.obj
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable wifi_station.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32c3 image...
+Merged 1 ELF section
+Successfully created esp32c3 image.
+Generated C:/station/build/wifi_station.bin
+[7/8] cmd.exe /C "cd /D C:\station\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/station/build/partition_table/partition-table.bin C:/station/build/wifi_station.bin"
+wifi_station.bin binary size 0xd9b70 bytes. Smallest app partition is 0x100000 bytes. 0x26490 bytes (15%) free.
+[7/8] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.2.2\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.2.2 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;C:/Espesptool.py --chip esp32c3 -p COM6 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 wifi_station.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM6
+Connecting.....................
+Chip is ESP32-C3 (QFN32) (revision v0.4)
+Features: WiFi, BLE
+Crystal is 40MHz
+MAC: 24:ec:4a:e5:81:08
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+WARNING: Failed to communicate with the flash chip, read/write operations will fail. Try checking the chip connections or removing any other hardware connected to IOs.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x000e9fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 20848 bytes to 12750...
+Writing at 0x00000000... (100 %)
+Wrote 20848 bytes (12750 compressed) at 0x00000000 in 0.8 seconds (effective 211.2 kbit/s)...
+Hash of data verified.
+Compressed 891760 bytes to 513363...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001da0a... (6 %)
+Writing at 0x00026ed8... (9 %)
+Writing at 0x0002bd56... (12 %)
+Writing at 0x00033dee... (15 %)
+Writing at 0x0003b6ce... (18 %)
+Writing at 0x000423aa... (21 %)
+Writing at 0x000493f5... (25 %)
+Writing at 0x00050fb7... (28 %)
+Writing at 0x000580ed... (31 %)
+Writing at 0x0005f3ad... (34 %)
+Writing at 0x000657be... (37 %)
+Writing at 0x0006c1c4... (40 %)
+Writing at 0x00072cc4... (43 %)
+Writing at 0x00078fc2... (46 %)
+Writing at 0x0007f5ea... (50 %)
+Writing at 0x000853f2... (53 %)
+Writing at 0x0008b46c... (56 %)
+Writing at 0x000917c7... (59 %)
+Writing at 0x00097c49... (62 %)
+Writing at 0x0009dc60... (65 %)
+Writing at 0x000a488e... (68 %)
+Writing at 0x000ab69f... (71 %)
+Writing at 0x000b28ef... (75 %)
+Writing at 0x000b994c... (78 %)
+Writing at 0x000bff28... (81 %)
+Writing at 0x000c63dc... (84 %)
+Writing at 0x000cc388... (87 %)
+Writing at 0x000d23f9... (90 %)
+Writing at 0x000da160... (93 %)
+Writing at 0x000e10c5... (96 %)
+Writing at 0x000e7772... (100 %)
+Wrote 891760 bytes (513363 compressed) at 0x00010000 in 15.4 seconds (effective 463.3 kbit/s)...
+File  md5: d83349ea1aebd38d0a0b4239f63925a1
+Flash md5: 710e2841462489df816c2be2941c1eb6
+MD5 of 0xFF is 67dc2bd4f420928e35f3f5a57f329d4a
+
+A fatal error occurred: MD5 of file does not match data in flash!
+ressif/frameworks/esp-idf-v5.2.2/components/esptool_py/esptool/esptool.py;--chip;esp32c3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/station/build -P C:/Espressif/frameworks/esp-idf-v5.2.2/components/esptool_py/run_serial_tool.cmake"
+FAILED: CMakeFiles/flash C:/station/build/CMakeFiles/flash 
+cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.2.2\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.2.2 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.2.2/components/esptool_py/esptool/esptool.py;--chip;esp32c3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/station/build -P C:/Espressif/frameworks/esp-idf-v5.2.2/components/esptool_py/run_serial_tool.cmake"
+ninja: build stopped: subcommand failed.

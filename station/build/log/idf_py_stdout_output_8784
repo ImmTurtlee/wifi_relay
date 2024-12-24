@@ -1,0 +1,262 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xd (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (21) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (21) boot: compile time Nov 13 2024 10:56:13[0m
+[0;32mI (22) boot: chip revision: v0.4[0m
+[0;32mI (25) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (30) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (34) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (45) boot: Partition Table:[0m
+[0;32mI (48) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (70) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=23fe0h (147424) map[0m
+[0;32mI (113) esp_image: segment 1: paddr=00034008 vaddr=3fc91a00 size=02ac0h ( 10944) load[0m
+[0;32mI (116) esp_image: segment 2: paddr=00036ad0 vaddr=40380000 size=09548h ( 38216) load[0m
+[0;32mI (126) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=9f7d8h (653272) map[0m
+[0;32mI (230) esp_image: segment 4: paddr=000df800 vaddr=40389548 size=083dch ( 33756) load[0m
+[0;32mI (242) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (242) boot: Disabling RNG early entropy source...[0m
+[0;32mI (253) cpu_start: Unicore app[0m
+[0;32mI (262) cpu_start: Pro cpu start user code[0m
+[0;32mI (262) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (262) cpu_start: Application information:[0m
+[0;32mI (265) cpu_start: Project name:     wifi_station[0m
+[0;32mI (271) cpu_start: App version:      1[0m
+[0;32mI (275) cpu_start: Compile time:     Nov 13 2024 10:56:06[0m
+[0;32mI (281) cpu_start: ELF file SHA256:  773657925...[0m
+[0;32mI (286) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (292) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (296) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (301) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (306) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (313) heap_init: At 3FC98AF0 len 00027510 (157 KiB): RAM[0m
+[0;32mI (319) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (326) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (333) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (341) spi_flash: detected chip: generic[0m
+[0;32mI (344) spi_flash: flash io: dio[0m
+[0;33mW (348) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (362) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (368) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (375) main_task: Started on CPU0[0m
+[0;32mI (375) main_task: Calling app_main()[0m
+[0;32mI (385) wifi station: ESP_WIFI_MODE_STA[0m
+[0;32mI (385) pp: pp rom version: 9387209[0m
+[0;32mI (385) net80211: net80211 rom version: 9387209[0m
+I (405) wifi:wifi driver task: 3fca15f8, prio:23, stack:6656, core=0
+I (405) wifi:wifi firmware version: 3e0076f
+I (405) wifi:wifi certification version: v7.0
+I (405) wifi:config NVS flash: enabled
+I (405) wifi:config nano formating: disabled
+I (415) wifi:Init data frame dynamic rx buffer num: 32
+I (415) wifi:Init static rx mgmt buffer num: 5
+I (425) wifi:Init management short buffer num: 32
+I (425) wifi:Init dynamic tx buffer num: 32
+I (435) wifi:Init static tx FG buffer num: 2
+I (435) wifi:Init static rx buffer size: 1600
+I (435) wifi:Init static rx buffer num: 10
+I (445) wifi:Init dynamic rx buffer num: 32
+[0;32mI (445) wifi_init: rx ba win: 6[0m
+[0;32mI (455) wifi_init: tcpip mbox: 32[0m
+[0;32mI (455) wifi_init: udp mbox: 6[0m
+[0;32mI (455) wifi_init: tcp mbox: 6[0m
+[0;32mI (465) wifi_init: tcp tx win: 5760[0m
+[0;32mI (465) wifi_init: tcp rx win: 5760[0m
+[0;32mI (475) wifi_init: tcp mss: 1440[0m
+[0;32mI (475) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (475) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (485) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+I (525) wifi:mode : sta (24:ec:4a:e5:81:08)
+I (525) wifi:enable tsf
+[0;32mI (525) wifi station: wifi_init_sta finished.[0m
+[0;32mI (2935) wifi station: retry to connect to the AP[0m
+[0;32mI (2935) wifi station: connect to the AP fail[0m
+[0;32mI (5345) wifi station: retry to connect to the AP[0m
+[0;32mI (5345) wifi station: connect to the AP fail[0m
+[0;32mI (7755) wifi station: retry to connect to the AP[0m
+[0;32mI (7755) wifi station: connect to the AP fail[0m
+[0;32mI (10165) wifi station: retry to connect to the AP[0m
+[0;32mI (10165) wifi station: connect to the AP fail[0m
+[0;32mI (12575) wifi station: retry to connect to the AP[0m
+[0;32mI (12575) wifi station: connect to the AP fail[0m
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xd (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (21) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (21) boot: compile time Nov 13 2024 10:56:13[0m
+[0;32mI (22) boot: chip revision: v0.4[0m
+[0;32mI (25) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (30) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (34) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (45) boot: Partition Table:[0m
+[0;32mI (48) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (70) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=23fe0h (147424) map[0m
+[0;32mI (113) esp_image: segment 1: paddr=00034008 vaddr=3fc91a00 size=02ac0h ( 10944) load[0m
+[0;32mI (116) esp_image: segment 2: paddr=00036ad0 vaddr=40380000 size=09548h ( 38216) load[0m
+[0;32mI (126) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=9f7d8h (653272) map[0m
+[0;32mI (230) esp_image: segment 4: paddr=000df800 vaddr=40389548 size=083dch ( 33756) load[0m
+[0;32mI (242) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (242) boot: Disabling RNG early entropy source...[0m
+[0;32mI (253) cpu_start: Unicore app[0m
+[0;32mI (262) cpu_start: Pro cpu start user code[0m
+[0;32mI (262) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (262) cpu_start: Application information:[0m
+[0;32mI (265) cpu_start: Project name:     wifi_station[0m
+[0;32mI (271) cpu_start: App version:      1[0m
+[0;32mI (275) cpu_start: Compile time:     Nov 13 2024 10:56:06[0m
+[0;32mI (281) cpu_start: ELF file SHA256:  773657925...[0m
+[0;32mI (286) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (292) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (296) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (301) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (306) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (313) heap_init: At 3FC98AF0 len 00027510 (157 KiB): RAM[0m
+[0;32mI (319) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (326) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (333) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (341) spi_flash: detected chip: generic[0m
+[0;32mI (344) spi_flash: flash io: dio[0m
+[0;33mW (348) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (362) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (368) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (375) main_task: Started on CPU0[0m
+[0;32mI (375) main_task: Calling app_main()[0m
+[0;32mI (385) wifi station: ESP_WIFI_MODE_STA[0m
+[0;32mI (385) pp: pp rom version: 9387209[0m
+[0;32mI (385) net80211: net80211 rom version: 9387209[0m
+I (405) wifi:wifi driver task: 3fca15f8, prio:23, stack:6656, core=0
+I (405) wifi:wifi firmware version: 3e0076f
+I (405) wifi:wifi certification version: v7.0
+I (405) wifi:config NVS flash: enabled
+I (405) wifi:config nano formating: disabled
+I (415) wifi:Init data frame dynamic rx buffer num: 32
+I (415) wifi:Init static rx mgmt buffer num: 5
+I (425) wifi:Init management short buffer num: 32
+I (425) wifi:Init dynamic tx buffer num: 32
+I (435) wifi:Init static tx FG buffer num: 2
+I (435) wifi:Init static rx buffer size: 1600
+I (435) wifi:Init static rx buffer num: 10
+I (445) wifi:Init dynamic rx buffer num: 32
+[0;32mI (445) wifi_init: rx ba win: 6[0m
+[0;32mI (455) wifi_init: tcpip mbox: 32[0m
+[0;32mI (455) wifi_init: udp mbox: 6[0m
+[0;32mI (455) wifi_init: tcp mbox: 6[0m
+[0;32mI (465) wifi_init: tcp tx win: 5760[0m
+[0;32mI (465) wifi_init: tcp rx win: 5760[0m
+[0;32mI (475) wifi_init: tcp mss: 1440[0m
+[0;32mI (475) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (475) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (485) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+I (525) wifi:mode : sta (24:ec:4a:e5:81:08)
+I (525) wifi:enable tsf
+[0;32mI (525) wifi station: wifi_init_sta finished.[0m
+[0;32mI (2935) wifi station: retry to connect to the AP[0m
+[0;32mI (2935) wifi station: connect to the AP fail[0m
+I (4095) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (4095) wifi:state: init -> auth (b0)
+I (4105) wifi:state: auth -> assoc (0)
+I (4115) wifi:state: assoc -> run (10)
+I (4255) wifi:connected with Turtlee, aid = 1, channel 8, BW20, bssid = 2e:b1:6f:6f:00:82
+I (4255) wifi:security: WPA2-PSK, phy: bgn, rssi: -36
+I (4265) wifi:pm start, type: 1
+
+I (4265) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (4265) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (4305) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (5275) esp_netif_handlers: sta ip: 172.20.10.6, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (5275) wifi station: got ip:172.20.10.6[0m
+[0;32mI (5275) wifi station: connected to ap SSID:Turtlee password:11111111[0m
+[0;32mI (5285) mqtts_example: [APP] Free memory: 230612 bytes[0m
+[0;32mI (5285) mqtts_example: Other event id:7[0m
+[0;32mI (5295) main_task: Returned from app_main()[0m
+[0;31mE (15305) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (15305) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (15305) mqtt_client: Error transport connect[0m
+[0;32mI (15305) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (15315) mqtts_example: Last error reported from esp-tls: 0x8006[0m
+[0;32mI (15315) mqtts_example: Last errno string (Success)[0m
+[0;32mI (15325) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (30325) mqtts_example: Other event id:7[0m
+I (30345) wifi:<ba-add>idx:0 (ifx:0, 2e:b1:6f:6f:00:82), tid:0, ssn:2, winSize:64
+[0;31mE (40335) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (40335) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (40335) mqtt_client: Error transport connect[0m
+[0;32mI (40335) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (40345) mqtts_example: Last error reported from esp-tls: 0x8006[0m
+[0;32mI (40345) mqtts_example: Last errno string (Success)[0m
+[0;32mI (40355) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (55355) mqtts_example: Other event id:7[0m
+[0;31mE (65365) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (65365) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (65365) mqtt_client: Error transport connect[0m
+[0;32mI (65365) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (65375) mqtts_example: Last error reported from esp-tls: 0x8006[0m
+[0;32mI (65375) mqtts_example: Last errno string (Success)[0m
+[0;32mI (65385) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (80385) mqtts_example: Other event id:7[0m
+[0;31mE (90395) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (90395) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (90395) mqtt_client: Error transport connect[0m
+[0;32mI (90395) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (90405) mqtts_example: Last error reported from esp-tls: 0x8006[0m
+[0;32mI (90405) mqtts_example: Last errno string (Success)[0m
+[0;32mI (90415) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (105415) mqtts_example: Other event id:7[0m
+[0;31mE (115425) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (115425) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (115425) mqtt_client: Error transport connect[0m
+[0;32mI (115425) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (115435) mqtts_example: Last error reported from esp-tls: 0x8006[0m
+[0;32mI (115435) mqtts_example: Last errno string (Success)[0m
+[0;32mI (115445) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (130445) mqtts_example: Other event id:7[0m
+[0;31mE (130555) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (130555) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (130555) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (130565) mqtts_example: Last error reported from esp-tls: 0x8008[0m
+[0;32mI (130575) mqtts_example: Last errno string (Success)[0m
+[0;31mE (130575) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -2[0m
+[0;31mE (130585) mqtt_client: MQTT connect failed[0m
+[0;32mI (130595) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (145595) mqtts_example: Other event id:7[0m
+[0;31mE (145605) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (145605) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (145615) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (145625) mqtts_example: Last error reported from esp-tls: 0x8008[0m
+[0;32mI (145625) mqtts_example: Last errno string (Success)[0m
+[0;31mE (145635) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -2[0m
+[0;31mE (145645) mqtt_client: MQTT connect failed[0m
+[0;32mI (145645) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (155655) mqtts_example: Other event id:7[0m
+[0;32mI (157605) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (157605) mqtts_example: sent subscribe successful, msg_id=65051[0m
+[0;32mI (157625) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=65051[0m
+[0;31mE (197435) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (197435) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (197445) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;31mE (197445) mqtts_example: Last error reported from esp-tls: 0x8008[0m
+[0;32mI (197455) mqtts_example: Last errno string (Success)[0m
+[0;31mE (197455) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (197465) mqtts_example: MQTT_EVENT_DISCONNECTED[0m

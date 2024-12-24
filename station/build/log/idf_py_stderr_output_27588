@@ -1,0 +1,16 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM4 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM4 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33mStack dump detected[0m
+[0;33m0x42009064: mqtt_event_handler at C:/station/main/app_mqtt.c:72
+[0m
+[0;33m0x40380001: _vector_table at ??:?
+[0m
+[0;33mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\station\\build\\wifi_station.elf', '-ex', 'target remote | "C:\\Espressif\\python_env\\idf5.2_py3.11_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\admin\\AppData\\Local\\Temp\\tmp9532t4e5"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Espressif\\python_env\\idf5.2_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\admin\\AppData\\Local\\Temp\\tmp9532t4e5': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m0x403806bc: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/soc/esp32c3/system_internal.c:111
+[0m
+[0m
